@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1>Active Tables</h1>
+
+{% assign active_tables = site.tables | where: 'active', true %}
+{% for table in active_tables %}
+  <div class="table">
+    {{ table.name }}
+  </div>
+{% endfor %}

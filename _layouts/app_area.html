@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<h1>{{ page.name }}</h1>
+{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+{{ page.content }}
+
+<h2>Tables</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign my_tables = site.tables | where: 'app_area', page.app_id %}
+  {% for table in my_tables %}
+    <tr>
+      <td><a href="{{ table.url }}">{{ table.name }}</a></td>
+      <td>{{ table.description }}</td>
+      <td></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h1>Unused Tables</h1>
+
+{% assign inactive_tables = site.tables | where: 'active', false %}
+<h2>Tables</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+  {% for table in inactive_tables %}
+    <tr>
+      <td><a href="{{ table.url }}">{{ table.name }}</a></td>
+      <td>{{ table.description }}</td>
+      <td></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

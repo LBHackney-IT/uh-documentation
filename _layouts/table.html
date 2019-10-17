@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1>{{ page.name }}</h1>
+{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+{{ page.content }}
+
+<p>Active Table: {% if page.active %}yes{% else %}no{% endif %}</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% for col in page.columns %}
+      <tr>
+        <td>{{ col.name }}</td>
+        <td>{{ col.type }}</td>
+        <td>{{ col.description }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
