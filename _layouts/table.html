@@ -14,6 +14,7 @@ layout: default
       <td>Name</td>
       <td>Type</td>
       <td>Description</td>
+      <td>References</td>
     </tr>
   </thead>
   <tbody>
@@ -22,6 +23,18 @@ layout: default
         <td>{{ col.name }}</td>
         <td>{{ col.type }}</td>
         <td>{{ col.description }}</td>
+        <td>{% if col.references %}
+        {% assign ref = nil %}
+        {% for table in site.tables %}
+          {% if table.name == col.references[0] %}
+            {% assign ref = table %}
+          {% endif %}
+        {% endfor %}
+        {% if ref %}
+          <a href="{{ ref.url }}">{{ ref.name }}</a>
+        {% else %}
+        {{ col.references[0] }}
+        {% endif %}({{ col.references[1] }}){% endif %}</td>
       </tr>
     {% endfor %}
   </tbody>

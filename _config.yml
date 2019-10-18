@@ -19,3 +19,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - bin
+
+emptyarray: []

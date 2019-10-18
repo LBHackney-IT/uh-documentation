@@ -16,11 +16,27 @@ layout: default
   </thead>
   <tbody>
   {% assign my_tables = site.tables | where: 'app_area', page.app_id %}
-  {% for table in my_tables %}
+  {% for my_table in my_tables %}
     <tr>
-      <td><a href="{{ table.url }}">{{ table.name }}</a></td>
-      <td>{{ table.description }}</td>
-      <td></td>
+      <td><a href="{{ my_table.url }}">{{ my_table.name }}</a></td>
+      <td>{{ my_table.description }}</td>
+      <td>
+      {% assign refs = site.emptyarray %}
+      {% for col in my_table.columns %}
+        {% if col.references %}
+          {% capture temp %}
+            {% for table in site.tables %}
+              {% if table.name == col.references[0] %}
+                <a href="{{ table.url }}">{{ table.name }}</a>
+              {% endif %}
+            {% endfor %}
+          {% endcapture %}
+          {% assign temp = temp | strip %}
+          {% assign refs = refs | push: temp %}
+        {% endif %}
+      {% endfor %}
+      {{ refs | join: ', ' }}
+      </td>
     </tr>
   {% endfor %}
   </tbody>

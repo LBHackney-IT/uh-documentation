@@ -2,9 +2,35 @@
 name: rmtask
 layout: table
 description: ''
-active: false
-relations: []
-app_area: ''
+active: true
+app_area: reactive_repairs
+primary_key: task_ref
+indexes:
+- name: ix_wlapp_con_key
+  unique: false
+  columns:
+  - con_key
+- name: ix_wlapp_house_refwl_status
+  unique: false
+  columns:
+  - house_ref
+  - wl_status
+- name: ix_wlapp_u_novalet_ref
+  unique: false
+  columns:
+  - u_novalet_ref
+- name: ix_wlapp_wlapp_sid
+  unique: true
+  columns:
+  - wlapp_sid
+- name: wlapp_send_to_cbl
+  unique: false
+  columns:
+  - send_to_cbl
+- name: wlapp_tstamp
+  unique: true
+  columns:
+  - tstamp
 columns:
 - name: act_cost
   type: numeric(9,2)
@@ -191,7 +217,10 @@ columns:
   description: ''
 - name: job_code
   type: char(8)
-  description: ''
+  description: Job Code
+  references:
+  - rmjob
+  - job_code
 - name: lettability
   type: bit
   description: ''
@@ -284,7 +313,10 @@ columns:
   description: ''
 - name: rq_ref
   type: char(8)
-  description: ''
+  description: Repair Reference
+  references:
+  - rmreqst
+  - rq_ref
 - name: s_liable
   type: int(4)
   description: ''
@@ -314,7 +346,10 @@ columns:
   description: ''
 - name: sup_ref
   type: char(12)
-  description: ''
+  description: Supplier Reference
+  references:
+  - supplier
+  - sup_ref
 - name: suspended
   type: bit
   description: ''
@@ -323,7 +358,10 @@ columns:
   description: ''
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+  - rmtrans
+  - task_ref
 - name: task_status
   type: char(3)
   description: ''
@@ -386,12 +424,17 @@ columns:
   description: ''
 - name: wo_ref
   type: char(10)
-  description: ''
+  description: Work Order Reference
+  references:
+  - rmworder
+  - wo_ref
 - name: wo_user
   type: char(10)
   description: ''
 - name: wo_version
   type: int(4)
   description: ''
+relations: []
+pseudo_pk: 
 ---
 

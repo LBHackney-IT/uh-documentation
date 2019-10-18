@@ -43,8 +43,14 @@ ActiveRecord::Base.establish_connection(dbconfig)
 ActiveRecord::Base.connection.tables.each do |table|
   filename = "_tables/#{table}.md"
   
-  data = {'name' => table, 'layout' => 'table', 'description' => '', 'active' => false, 'relations' => [], 'app_area' => ''}
+  data = {'name' => table, 'layout' => 'table', 'description' => '', 'active' => false, 'app_area' => ''}
   content = ''
+  
+  # Fetch index data
+  data['primary_key'] = ActiveRecord::Base.connection.primary_key(table)
+  data['indexes'] = ActiveRecord::Base.connection.indexes('wlapp').map{ |index|
+    {'name' => index.name, 'unique' => !!index.unique, 'columns' => index.columns}
+  }
   
   # Inspect each column
   data['columns'] = ActiveRecord::Base.connection.columns(table).map do |column|
@@ -53,23 +59,28 @@ ActiveRecord::Base.connection.tables.each do |table|
   
   # Merge in the existing data
   if File.exist?(filename)
+
     # Parse the file
     parsed = FrontMatterParser::Parser.parse_file(filename)
+
     # Copy across any content
     content = parsed.content
     data['description'] = parsed.front_matter['description']
     data['active'] = parsed.front_matter['active']
     data['relations'] = parsed.front_matter['relations']
     data['app_area'] = parsed.front_matter['app_area']
+    data['pseudo_pk'] = parsed.front_matter['pseudo_pk']
 
     # Index the columns for quicker lookup
     doc_cols = parsed.front_matter['columns'].map{ |col|
       [col['name'], col]
     }.to_h
+
     # Pull across the description field
     data['columns'].each do |col|
       if doc_cols[col['name']]
         col['description'] = doc_cols[col['name']]['description']
+        col['references'] = doc_cols[col['name']]['references'] if doc_cols[col['name']]['references']
       end
     end
   end
