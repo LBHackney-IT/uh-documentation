@@ -2,7 +2,7 @@
 name: rentsrc
 layout: table
 description: ''
-active: true
+type: active
 app_area: rent_transactions
 primary_key: 
 indexes:

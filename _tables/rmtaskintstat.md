@@ -2,7 +2,7 @@
 name: rmtaskintstat
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: 
 indexes: []

@@ -2,7 +2,7 @@
 name: prophier
 layout: table
 description: Property Hierarchy
-active: true
+type: active
 app_area: property
 primary_key: 
 indexes:

@@ -2,7 +2,7 @@
 name: u_scshn
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: sc_impline
 indexes: []
@@ -15,7 +15,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: s125applies
   type: bit
   description: ''

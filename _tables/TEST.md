@@ -2,7 +2,7 @@
 name: TEST
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: TESTID
 indexes: []

@@ -2,7 +2,7 @@
 name: ASB_data_matched_UPRN
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

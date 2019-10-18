@@ -2,7 +2,7 @@
 name: u_ddtrans_378
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
@@ -68,8 +68,11 @@ columns:
   type: char(10)
   description: ''
 - name: tag_ref
-  type: char(12)
-  description: ''
+  type: char(11)
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

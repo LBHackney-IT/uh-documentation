@@ -2,7 +2,7 @@
 name: pre_sc_fix_ddagree
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

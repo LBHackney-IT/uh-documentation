@@ -2,7 +2,7 @@
 name: tenambr
 layout: table
 description: ''
-active: true
+type: active
 app_area: tenancies
 primary_key: 
 indexes:

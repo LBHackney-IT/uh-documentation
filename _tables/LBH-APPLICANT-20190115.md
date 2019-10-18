@@ -2,7 +2,7 @@
 name: LBH-APPLICANT-20190115
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

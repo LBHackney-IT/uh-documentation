@@ -2,7 +2,7 @@
 name: tmp_bal_check2
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

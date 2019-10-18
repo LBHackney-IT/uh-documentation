@@ -2,7 +2,7 @@
 name: wlaben
 layout: table
 description: ''
-active: true
+type: active
 app_area: housing_register
 primary_key: wlaben_sid
 indexes:

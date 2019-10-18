@@ -2,7 +2,7 @@
 name: scheme
 layout: table
 description: ''
-active: true
+type: active
 app_area: property
 primary_key: 
 pseudo_pk: scheme_ref

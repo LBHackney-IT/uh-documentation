@@ -2,14 +2,17 @@
 name: tmp_sc_factors
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: u_sc_block_perc
   type: numeric(16,6)
   description: ''

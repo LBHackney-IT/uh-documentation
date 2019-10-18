@@ -2,7 +2,7 @@
 name: rtbs125
 layout: table
 description: ''
-active: true
+type: active
 app_area: right_to_buy
 primary_key: 
 indexes:
@@ -35,7 +35,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

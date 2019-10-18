@@ -2,7 +2,7 @@
 name: tmp_debcharg_hack_070313
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []
@@ -81,7 +81,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: rentgrpref
   type: char(3)
   description: ''
@@ -96,7 +99,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

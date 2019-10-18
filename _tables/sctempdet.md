@@ -2,7 +2,7 @@
 name: sctempdet
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: sctempdet_sid
 indexes:

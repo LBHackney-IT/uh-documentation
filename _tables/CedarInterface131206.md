@@ -2,7 +2,7 @@
 name: CedarInterface131206
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: SerialNr
 indexes: []

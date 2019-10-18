@@ -2,7 +2,7 @@
 name: tenagree
 layout: table
 description: ''
-active: true
+type: active
 app_area: tenancies
 primary_key: 
 indexes:
@@ -415,7 +415,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: ra_date
   type: smalldatetime
   description: ''

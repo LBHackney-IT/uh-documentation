@@ -2,14 +2,17 @@
 name: tmp_scgroup_props
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: sc_appmethod
   type: char(10)
   description: ''

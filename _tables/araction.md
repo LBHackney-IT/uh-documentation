@@ -2,7 +2,7 @@
 name: araction
 layout: table
 description: Arrears Action Diary
-active: true
+type: active
 app_area: arrears
 primary_key: 
 indexes:

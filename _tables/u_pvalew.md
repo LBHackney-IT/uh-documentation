@@ -2,7 +2,7 @@
 name: u_pvalew
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: pval_seq
 indexes: []
@@ -18,7 +18,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: pval_etype
   type: char(3)
   description: ''
@@ -36,7 +39,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

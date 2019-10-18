@@ -2,7 +2,7 @@
 name: u_scdet
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: sc_detline
 indexes:
@@ -18,7 +18,10 @@ indexes:
 columns:
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: sc_accdesc
   type: char(60)
   description: ''

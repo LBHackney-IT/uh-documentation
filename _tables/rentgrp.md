@@ -2,7 +2,7 @@
 name: rentgrp
 layout: table
 description: ''
-active: true
+type: active
 app_area: rent_transactions
 primary_key: 
 pseudo_pk: rentgrp_ref

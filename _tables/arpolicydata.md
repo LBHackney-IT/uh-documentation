@@ -2,7 +2,7 @@
 name: arpolicydata
 layout: table
 description: ''
-active: true
+type: active
 app_area: arrears
 primary_key: arpolicydata_sid
 indexes: []
@@ -27,7 +27,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: total_receipts
   type: numeric(12,4)
   description: ''

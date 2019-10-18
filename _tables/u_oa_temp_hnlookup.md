@@ -2,7 +2,7 @@
 name: u_oa_temp_hnlookup
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: Id
 indexes: []

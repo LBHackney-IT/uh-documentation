@@ -2,7 +2,7 @@
 name: rmcontdt
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: rmcontdt_sid
 indexes:

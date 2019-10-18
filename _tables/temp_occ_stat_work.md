@@ -2,7 +2,7 @@
 name: temp_occ_stat_work
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: ID
 indexes: []
@@ -12,7 +12,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 relations: []
 pseudo_pk: 
 ---

@@ -2,7 +2,7 @@
 name: oCM_lookup_map
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: source_type
 indexes: []

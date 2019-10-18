@@ -2,7 +2,7 @@
 name: postcode
 layout: table
 description: ''
-active: true
+type: active
 app_area: property
 primary_key: post_code
 indexes:

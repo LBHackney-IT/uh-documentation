@@ -2,14 +2,17 @@
 name: u_contacts_010713
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: app_ref
   type: char(10)
-  description: ''
+  description: Application Reference
+  references:
+   - wlapp
+   - app_ref
 - name: comp_avail
   type: char(200)
   description: ''
@@ -63,10 +66,16 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

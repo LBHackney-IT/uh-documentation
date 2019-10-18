@@ -2,7 +2,7 @@
 name: COSTSUBJECTIVECHANGES_TRACY
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

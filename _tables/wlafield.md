@@ -2,7 +2,7 @@
 name: wlafield
 layout: table
 description: ''
-active: true
+type: active
 app_area: housing_register
 primary_key: 
 indexes:

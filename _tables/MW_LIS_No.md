@@ -2,7 +2,7 @@
 name: MW_LIS_No
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: lis_no
 indexes: []

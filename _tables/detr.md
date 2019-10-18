@@ -2,7 +2,7 @@
 name: detr
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:
@@ -48,7 +48,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: reasoncode
   type: char(3)
   description: ''

@@ -2,14 +2,17 @@
 name: u_schedrev_props
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: reviewable
   type: int(4)
   description: ''

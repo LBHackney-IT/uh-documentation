@@ -2,7 +2,7 @@
 name: wlapp
 layout: table
 description: Waiting List Application
-active: true
+type: active
 app_area: housing_register
 primary_key: app_ref
 indexes:
@@ -220,7 +220,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: protected_rights
   type: bit
   description: ''

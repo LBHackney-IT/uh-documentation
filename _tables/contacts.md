@@ -2,9 +2,10 @@
 name: contacts
 layout: table
 description: Contacts
-active: true
+type: active
 app_area: contacts
 primary_key: 
+pseudo_pk: con_key
 indexes:
 - name: contacts01
   unique: true
@@ -55,6 +56,9 @@ columns:
 - name: app_ref
   type: char(10)
   description: Application Reference
+  references:
+   - wlapp
+   - app_ref
 - name: comp_avail
   type: char(200)
   description: ''
@@ -66,7 +70,10 @@ columns:
   description: ''
 - name: con_key
   type: int(4)
-  description: ''
+  description: Contact Key
+  references:
+   - conlog
+   - con_key
 - name: con_name
   type: varchar(73)
   description: ''
@@ -108,10 +115,16 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

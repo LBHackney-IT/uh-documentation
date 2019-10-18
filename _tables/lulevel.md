@@ -2,7 +2,7 @@
 name: lulevel
 layout: table
 description: ''
-active: true
+type: active
 app_area: property
 primary_key: 
 pseudo_pk: lu_ref

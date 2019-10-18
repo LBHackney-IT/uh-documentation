@@ -2,7 +2,7 @@
 name: warden
 layout: table
 description: ''
-active: true
+type: active
 app_area: property
 primary_key: 
 pseudo_pk: warden_ref

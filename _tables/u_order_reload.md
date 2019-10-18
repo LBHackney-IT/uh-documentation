@@ -2,7 +2,7 @@
 name: u_order_reload
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

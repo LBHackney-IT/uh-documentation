@@ -2,7 +2,7 @@
 name: u_temp_member_BKP
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

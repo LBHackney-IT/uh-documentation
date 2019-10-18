@@ -2,7 +2,7 @@
 name: member
 layout: table
 description: Household Members
-active: true
+type: active
 app_area: households
 primary_key: 
 indexes:

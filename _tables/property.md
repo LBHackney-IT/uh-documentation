@@ -2,7 +2,7 @@
 name: property
 layout: table
 description: Properties
-active: true
+type: active
 app_area: property
 primary_key: prop_ref
 indexes:

@@ -2,7 +2,7 @@
 name: sumv
 layout: table
 description: ''
-active: true
+type: active
 app_area: rent_transactions
 primary_key: 
 indexes:
@@ -61,7 +61,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: start_date
   type: smalldatetime
   description: ''

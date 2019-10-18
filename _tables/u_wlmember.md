@@ -2,7 +2,7 @@
 name: u_wlmember
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:
@@ -15,7 +15,10 @@ indexes:
 columns:
 - name: app_ref
   type: char(10)
-  description: ''
+  description: Application Reference
+  references:
+   - wlapp
+   - app_ref
 - name: health
   type: char(3)
   description: ''

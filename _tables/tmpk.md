@@ -2,14 +2,17 @@
 name: tmpk
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: app_ref
   type: char(10)
-  description: ''
+  description: Application Reference
+  references:
+   - wlapp
+   - app_ref
 - name: auto_man
   type: char(10)
   description: ''

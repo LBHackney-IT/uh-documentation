@@ -2,7 +2,7 @@
 name: serials_snrepw_test
 layout: table
 description: ''
-active: false
+type: serials
 app_area: ''
 primary_key: 
 indexes: []

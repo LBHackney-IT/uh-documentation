@@ -2,7 +2,7 @@
 name: rmorderhistory
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: rmorderhistory_sid
 indexes: []

@@ -2,7 +2,7 @@
 name: rmjobcst
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: rmjobcst_sid
 indexes:

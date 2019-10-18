@@ -2,7 +2,7 @@
 name: u_auto_batch_audit
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: audit_no
 indexes: []

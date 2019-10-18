@@ -2,7 +2,7 @@
 name: u_oa_hiddenlookup
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: ID
 indexes: []

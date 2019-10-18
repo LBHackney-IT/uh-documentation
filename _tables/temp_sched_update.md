@@ -2,7 +2,7 @@
 name: temp_sched_update
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: ID
 indexes: []

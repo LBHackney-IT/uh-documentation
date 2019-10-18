@@ -2,7 +2,7 @@
 name: u_uht_codeman_map_GJS22022010
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

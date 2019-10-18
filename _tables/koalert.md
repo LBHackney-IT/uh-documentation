@@ -2,7 +2,7 @@
 name: koalert
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: koalert_sid
 indexes: []

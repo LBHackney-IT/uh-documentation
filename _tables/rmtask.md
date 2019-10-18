@@ -2,7 +2,7 @@
 name: rmtask
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: task_ref
 indexes:
@@ -330,7 +330,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: punctual
   type: bit
   description: ''

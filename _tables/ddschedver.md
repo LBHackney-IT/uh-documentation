@@ -2,7 +2,7 @@
 name: ddschedver
 layout: table
 description: ''
-active: true
+type: active
 app_area: direct_debits
 primary_key: 
 indexes:

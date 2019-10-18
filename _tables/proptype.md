@@ -2,7 +2,7 @@
 name: proptype
 layout: table
 description: ''
-active: true
+type: active
 app_area: property
 primary_key: proptype_sid
 indexes: []

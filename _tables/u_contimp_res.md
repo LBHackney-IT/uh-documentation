@@ -2,7 +2,7 @@
 name: u_contimp_res
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: ie_id
 indexes: []

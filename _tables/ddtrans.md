@@ -2,7 +2,7 @@
 name: ddtrans
 layout: table
 description: ''
-active: true
+type: active
 app_area: direct_debits
 primary_key: 
 indexes:
@@ -93,7 +93,7 @@ columns:
   type: char(10)
   description: ''
 - name: tag_ref
-  type: char(12)
+  type: char(11)
   description: Tenancy Agreement Reference
   references:
    - tenagree

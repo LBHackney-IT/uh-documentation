@@ -2,7 +2,7 @@
 name: optitime_template_sor
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

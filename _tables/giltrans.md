@@ -2,7 +2,7 @@
 name: giltrans
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:
@@ -42,7 +42,7 @@ columns:
   type: char(20)
   description: ''
 - name: tag_ref
-  type: char(12)
+  type: char(11)
   description: Tenancy Agreement Reference
   references:
    - tenagree

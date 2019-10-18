@@ -2,7 +2,7 @@
 name: u_member_nino_bkup
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

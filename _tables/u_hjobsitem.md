@@ -2,7 +2,7 @@
 name: u_hjobsitem
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:

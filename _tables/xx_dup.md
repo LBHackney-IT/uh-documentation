@@ -2,7 +2,7 @@
 name: xx_dup
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

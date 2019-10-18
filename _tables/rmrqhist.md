@@ -2,7 +2,7 @@
 name: rmrqhist
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: rmrqhist_id
 indexes:

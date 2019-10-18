@@ -2,7 +2,7 @@
 name: JOB_ITEM_VARIATIONS1
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

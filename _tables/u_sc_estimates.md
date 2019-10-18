@@ -2,7 +2,7 @@
 name: u_sc_estimates
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
@@ -15,7 +15,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: update_ok
   type: char(1)
   description: ''

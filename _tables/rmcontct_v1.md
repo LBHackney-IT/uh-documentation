@@ -2,7 +2,7 @@
 name: rmcontct_v1
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []
@@ -24,7 +24,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: prop_sql
   type: text
   description: ''

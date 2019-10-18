@@ -2,7 +2,7 @@
 name: ddbacsco
 layout: table
 description: ''
-active: true
+type: active
 app_area: direct_debits
 primary_key: 
 pseudo_pk: bco_ref

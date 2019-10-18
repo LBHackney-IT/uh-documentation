@@ -2,7 +2,7 @@
 name: u_sc_params
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:

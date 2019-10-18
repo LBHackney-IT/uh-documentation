@@ -2,14 +2,17 @@
 name: u_nasser
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 relations: []
 pseudo_pk: 
 ---

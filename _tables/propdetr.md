@@ -2,7 +2,7 @@
 name: propdetr
 layout: table
 description: ''
-active: true
+type: active
 app_area: property
 primary_key: 
 indexes:

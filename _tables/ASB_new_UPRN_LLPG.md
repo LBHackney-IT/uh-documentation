@@ -2,7 +2,7 @@
 name: ASB_new_UPRN_LLPG
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: ID
 indexes: []

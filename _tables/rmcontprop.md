@@ -2,7 +2,7 @@
 name: rmcontprop
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: 
 indexes:
@@ -32,7 +32,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: rc_ref
   type: char(12)
   description: ''

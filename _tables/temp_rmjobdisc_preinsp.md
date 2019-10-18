@@ -2,7 +2,7 @@
 name: temp_rmjobdisc_preinsp
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

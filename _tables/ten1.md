@@ -2,7 +2,7 @@
 name: ten1
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:
@@ -124,7 +124,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: ra_date
   type: smalldatetime
   description: ''
@@ -172,7 +175,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: ten1_sid
   type: int(4)
   description: ''

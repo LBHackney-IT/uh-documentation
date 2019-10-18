@@ -2,7 +2,7 @@
 name: lauth
 layout: table
 description: Local Authority
-active: true
+type: active
 app_area: property
 primary_key: 
 pseudo_pk: la_ref

@@ -2,7 +2,7 @@
 name: scadjcri
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: scadjcri_sid
 indexes:

@@ -2,7 +2,7 @@
 name: debitem
 layout: table
 description: ''
-active: true
+type: active
 app_area: rent_transactions
 primary_key: 
 indexes:
@@ -145,7 +145,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: sb_container
   type: char(10)
   description: ''
@@ -163,7 +166,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: term_date
   type: smalldatetime
   description: ''

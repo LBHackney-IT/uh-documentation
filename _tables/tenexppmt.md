@@ -2,7 +2,7 @@
 name: tenexppmt
 layout: table
 description: ''
-active: true
+type: active
 app_area: tenancies
 primary_key: tenexppmt_sid
 indexes: []

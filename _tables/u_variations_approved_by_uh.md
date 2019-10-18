@@ -2,7 +2,7 @@
 name: u_variations_approved_by_uh
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

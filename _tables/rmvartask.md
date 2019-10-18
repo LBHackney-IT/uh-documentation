@@ -2,7 +2,7 @@
 name: rmvartask
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: rmvartask_sid
 indexes: []

@@ -2,14 +2,17 @@
 name: conlfixsave
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []
 columns:
 - name: app_ref
   type: char(10)
-  description: ''
+  description: Application Reference
+  references:
+   - wlapp
+   - app_ref
 - name: clog_actioncomment
   type: text
   description: ''
@@ -78,13 +81,19 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: sup_ref
   type: char(12)
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: user_code
   type: char(3)
   description: ''

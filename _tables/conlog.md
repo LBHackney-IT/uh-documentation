@@ -2,7 +2,7 @@
 name: conlog
 layout: table
 description: Contact Log
-active: true
+type: active
 app_area: contacts
 primary_key: 
 indexes:
@@ -124,19 +124,31 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household Reference
+  references:
+   - househ
+   - house_ref
 - name: ole_name
   type: char(50)
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: sup_ref
   type: char(12)
-  description: ''
+  description: Supplier Reference
+  references:
+   - supplier
+   - sup_ref
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

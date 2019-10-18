@@ -2,7 +2,7 @@
 name: aracthis
 layout: table
 description: ''
-active: true
+type: active
 app_area: arrears
 primary_key: 
 indexes:
@@ -40,7 +40,7 @@ columns:
   type: smalldatetime
   description: ''
 - name: tag_ref
-  type: char(12)
+  type: char(11)
   description: Tenancy Agreement Reference
   references:
    - tenagree

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign active_tables = site.tables | where: 'active', true %}
+{% assign active_tables = site.tables | where: 'type', 'active' %}
 
 <h1>{{ active_tables.size }} Active Tables</h1>
 
@@ -43,4 +43,5 @@ layout: default
 </table>
 
 
-<a href="./unused">Unused Tables</a>
+<a href="./unused">Unused Tables</a> 
+<a href="./unknown">Unknown Tables</a>

@@ -2,7 +2,7 @@
 name: u_servintlog_20151014
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: cserial
 indexes: []

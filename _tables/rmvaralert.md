@@ -2,7 +2,7 @@
 name: rmvaralert
 layout: table
 description: ''
-active: true
+type: active
 app_area: reactive_repairs
 primary_key: rmvaralert_sid
 indexes: []

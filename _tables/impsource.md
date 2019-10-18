@@ -2,7 +2,7 @@
 name: impsource
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: impsource_id
 indexes:

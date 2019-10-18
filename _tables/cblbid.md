@@ -2,7 +2,7 @@
 name: cblbid
 layout: table
 description: Choice Based Lettings Bid
-active: true
+type: active
 app_area: housing_register
 primary_key: cblbid_sid
 indexes:
@@ -39,7 +39,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: shortlisted
   type: bit
   description: ''

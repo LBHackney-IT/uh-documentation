@@ -2,7 +2,7 @@
 name: sync_detail_arch
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:

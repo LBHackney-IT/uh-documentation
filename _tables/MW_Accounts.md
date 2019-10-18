@@ -2,7 +2,7 @@
 name: MW_Accounts
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
@@ -79,9 +79,12 @@ columns:
 - name: MW_Tag_Ref
   type: char(11)
   description: ''
-- name: Prop_Ref
+- name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: SC_Pay_Ref
   type: char(20)
   description: ''

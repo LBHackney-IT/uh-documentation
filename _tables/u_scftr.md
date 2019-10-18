@@ -2,7 +2,7 @@
 name: u_scftr
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes:
@@ -20,7 +20,10 @@ indexes:
 columns:
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: sc_deb_code
   type: char(3)
   description: ''

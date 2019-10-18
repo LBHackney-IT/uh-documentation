@@ -2,7 +2,7 @@
 name: u_ownhst
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: so_seq_no
 indexes: []
@@ -15,7 +15,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: so_action
   type: char(3)
   description: ''
@@ -66,7 +69,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

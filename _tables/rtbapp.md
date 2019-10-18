@@ -2,7 +2,7 @@
 name: rtbapp
 layout: table
 description: ''
-active: true
+type: active
 app_area: right_to_buy
 primary_key: 
 indexes:

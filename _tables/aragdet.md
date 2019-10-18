@@ -2,7 +2,7 @@
 name: aragdet
 layout: table
 description: ''
-active: true
+type: active
 app_area: arrears
 primary_key: 
 indexes:

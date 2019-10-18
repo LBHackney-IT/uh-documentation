@@ -2,7 +2,7 @@
 name: SyncStreams
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: stream_id
 indexes:

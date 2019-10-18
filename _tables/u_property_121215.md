@@ -2,7 +2,7 @@
 name: u_property_121215
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
@@ -264,7 +264,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: property_sid
   type: int(4)
   description: ''

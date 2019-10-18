@@ -2,7 +2,7 @@
 name: serials_snpmtenno
 layout: table
 description: ''
-active: false
+type: serials
 app_area: ''
 primary_key: serials_sid
 indexes: []

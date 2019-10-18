@@ -2,7 +2,7 @@
 name: prophierprr
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: prop_ref
 indexes: []
@@ -18,7 +18,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: prophier_sid
   type: int(4)
   description: ''

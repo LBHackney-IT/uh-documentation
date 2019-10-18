@@ -2,8 +2,8 @@
 layout: default
 ---
 
-{% assign inactive_tables = site.tables | where: 'active', false %}
-<h1>{{ inactive_tables.size }} Unused Tables</h1>
+{% assign unused_tables = site.tables | where: 'type', 'unused' %}
+<h1>{{ unused_tables.size }} Unused Tables</h1>
 <table>
   <thead>
     <tr>
@@ -13,8 +13,7 @@ layout: default
     </tr>
   </thead>
   <tbody>
-  {% assign inactive_tables = site.tables | where: 'active', false %}
-  {% for my_table in inactive_tables %}
+  {% for my_table in unused_tables %}
     <tr>
       <td><a href="{{ my_table.url }}">{{ my_table.name }}</a></td>
       <td>{{ my_table.description }}</td>

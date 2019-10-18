@@ -2,7 +2,7 @@
 name: rreptye_docstore_PAV_postupgrade
 layout: table
 description: ''
-active: false
+type: unused
 app_area: ''
 primary_key: 
 indexes: []

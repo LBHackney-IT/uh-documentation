@@ -2,7 +2,7 @@
 name: MissingCodes
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []
@@ -10,9 +10,12 @@ columns:
 - name: MAN_SCHEME
   type: char(11)
   description: ''
-- name: PROP_REF
+- name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 relations: []
 pseudo_pk: 
 ---

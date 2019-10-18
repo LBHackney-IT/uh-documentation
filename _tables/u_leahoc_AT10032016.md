@@ -2,7 +2,7 @@
 name: u_leahoc_AT10032016
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: 
 indexes: []

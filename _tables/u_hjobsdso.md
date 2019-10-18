@@ -2,7 +2,7 @@
 name: u_hjobsdso
 layout: table
 description: ''
-active: false
+type: unknown
 app_area: ''
 primary_key: cserial
 indexes:
