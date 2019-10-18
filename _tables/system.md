@@ -6,28 +6,28 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_system_sys_global
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - sys_global
+- name: ix_system_sys_par
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - sys_par
+- name: system01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - company
+  - sys_par
+- name: system02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - sys_par
+- name: system_sid
+  unique: false
+  columns:
+  - system_sid
+- name: system_tstamp
   unique: true
   columns:
   - tstamp

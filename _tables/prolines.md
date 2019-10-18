@@ -6,28 +6,21 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: prolines01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - profile_no
+  - tag_ref
+  - trans_type
+- name: prolines02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - tag_ref
+- name: prolines_sid
+  unique: false
+  columns:
+  - prolines_sid
+- name: prolines_tstamp
   unique: true
   columns:
   - tstamp

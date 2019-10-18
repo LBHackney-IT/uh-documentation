@@ -5,30 +5,29 @@ description: Household Members
 active: true
 app_area: households
 primary_key: 
-pseudo_pk: wlapp_sid
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_member_dob
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - dob
+- name: member01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - house_ref
+  - person_no
+- name: member_ci_surname
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ci_surname
+- name: member_sid
+  unique: false
+  columns:
+  - member_sid
+- name: member_surname
+  unique: false
+  columns:
+  - surname
+- name: member_tstamp
   unique: true
   columns:
   - tstamp

@@ -6,28 +6,35 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_W2QuestionGroupLink_plan_refreq_date
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - plan_ref
+  - req_date
+- name: ix_W2QuestionGroupLink_prop_ref
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - prop_ref
+- name: pmsched01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - plan_ref
+  - prop_ref
+  - att_ref
+  - att_loc
+  - serv_repl
+  - job_code
+  - uniquer
+- name: pmsched02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - prop_ref
+  - req_date
+- name: pmsched_sid
+  unique: false
+  columns:
+  - pmsched_sid
+- name: pmsched_tstamp
   unique: true
   columns:
   - tstamp

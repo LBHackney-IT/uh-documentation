@@ -2,39 +2,27 @@
 name: ddsched
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: direct_debits
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: ddsched01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ddagree_ref
+  - ddsched_version
+  - dds_uniquer
+- name: ddsched_tstamp
   unique: true
   columns:
   - tstamp
 columns:
 - name: batchno
   type: int(4)
-  description: ''
+  description: Batch Number
+  references:
+   - ddbatch
+   - ddbatchno
 - name: collection_date
   type: smalldatetime
   description: ''
@@ -52,7 +40,10 @@ columns:
   description: ''
 - name: ddagree_ref
   type: char(20)
-  description: ''
+  description: DD Agreement Reference
+  references:
+   - ddagree
+   - ddagree_ref
 - name: dds_aragvalue
   type: numeric(12,2)
   description: ''
@@ -97,7 +88,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(12)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: transno
   type: int(4)
   description: ''

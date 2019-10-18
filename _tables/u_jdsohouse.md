@@ -6,31 +6,19 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_u_jdsohouse_IFACED_DATE_PROCESS_LOCKED_BY
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - IFACED_DATE
+  - PROCESS_LOCKED_BY
+- name: ix_u_jdsohouse_JHSETICKNO
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - JHSETICKNO
+- name: ix_u_jdsohouse_ROWID
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
-  unique: true
-  columns:
-  - tstamp
+  - ROWID
 columns:
 - name: CDATE
   type: datetime

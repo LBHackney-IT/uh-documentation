@@ -2,35 +2,22 @@
 name: ddagacc
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: direct_debits
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: ddagacc01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ddagree_ref
+- name: ddagacc_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_ddagacc_tag_ref
+  unique: false
+  columns:
+  - tag_ref
 columns:
 - name: arag_amount
   type: numeric(12,2)
@@ -52,7 +39,10 @@ columns:
   description: ''
 - name: ddagree_ref
   type: char(20)
-  description: ''
+  description: DD Agreement Reference
+  references:
+   - ddagree
+   - ddagree_ref
 - name: detail_schedule
   type: bit
   description: ''
@@ -103,7 +93,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(12)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: total_due
   type: numeric(12,2)
   description: ''

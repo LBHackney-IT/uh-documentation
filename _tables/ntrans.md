@@ -2,35 +2,29 @@
 name: ntrans
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: rent_transactions
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: ntrans01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - batchno
+  - transno
+  - line_no
+  - batchid
+- name: ntrans_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ntrans_sid
+- name: ntrans_tstamp
   unique: true
   columns:
   - tstamp
+- name: u_ntrans_pe
+  unique: false
+  columns:
+  - batchid
 columns:
 - name: amount
   type: numeric(10,2)

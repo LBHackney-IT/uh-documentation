@@ -2,32 +2,32 @@
 name: sumnt
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: rent_transactions
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: sumnt01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - tag_ref
+  - prd_sno
+  - source
+- name: sumnt02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - sumr_key
+- name: sumnt03
+  unique: false
+  columns:
+  - tag_ref
+  - prd_sno
+- name: sumnt04
+  unique: true
+  columns:
+  - tag_ref
+  - prd_sno
+  - source
+- name: sumnt_tstamp
   unique: true
   columns:
   - tstamp

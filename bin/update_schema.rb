@@ -48,7 +48,7 @@ ActiveRecord::Base.connection.tables.each do |table|
   
   # Fetch index data
   data['primary_key'] = ActiveRecord::Base.connection.primary_key(table)
-  data['indexes'] = ActiveRecord::Base.connection.indexes('wlapp').map{ |index|
+  data['indexes'] = ActiveRecord::Base.connection.indexes(table).map{ |index|
     {'name' => index.name, 'unique' => !!index.unique, 'columns' => index.columns}
   }
   

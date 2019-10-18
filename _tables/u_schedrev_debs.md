@@ -6,31 +6,23 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: u_schedrev_debs_idx1
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - schedule
+  - prop_ref
+- name: u_schedrev_debs_idx2
+  unique: false
+  columns:
+  - tag_ref
+- name: u_schedrev_debs_idx3
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: u_schedrev_debs_idx4
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
-  unique: true
-  columns:
-  - tstamp
+  - schedule
 columns:
 - name: accom_type
   type: char(40)

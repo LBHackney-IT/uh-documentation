@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-<h1>Unused Tables</h1>
 
 {% assign inactive_tables = site.tables | where: 'active', false %}
-<h2>Tables</h2>
+<h1>{{ inactive_tables.size }} Unused Tables</h1>
 <table>
   <thead>
     <tr>

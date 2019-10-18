@@ -2,45 +2,39 @@
 name: ddagree
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: direct_debits
 primary_key: 
+pseudo_pk: ddagree_ref
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: ddagree01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ddagree_ref
+- name: ddagree_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_ddagree_ddpayer_ref
+  unique: false
+  columns:
+  - ddpayer_ref
 columns:
 - name: altaccount
   type: int(4)
   description: ''
 - name: bank_acc
   type: char(20)
-  description: ''
+  description: Bank Account
+  references:
+   - ddbankacc
+   - bank_acc
 - name: bco_ref
   type: char(20)
-  description: ''
+  description: BACS Reference ?
+  references:
+   - ddbacsco
+   - bco_ref
 - name: check_details
   type: varchar(120)
   description: ''
@@ -67,7 +61,7 @@ columns:
   description: ''
 - name: ddagree_ref
   type: char(20)
-  description: ''
+  description: DD Agreement Reference
 - name: ddagree_sid
   type: int(4)
   description: ''

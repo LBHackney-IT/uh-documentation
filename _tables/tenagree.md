@@ -2,35 +2,170 @@
 name: tenagree
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: tenancies
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: idx_tenure
+  unique: false
+  columns:
+  - tenure
+- name: ix_tenagree_active_presentagr_type
+  unique: false
+  columns:
+  - active
+  - present
+  - agr_type
+- name: ix_tenagree_agr_type
+  unique: false
+  columns:
+  - agr_type
+- name: ix_tenagree_agr_type_u_letting_date
+  unique: false
+  columns:
+  - agr_type
+  - u_letting_date
+- name: ix_tenagree_con_keyeot
   unique: false
   columns:
   - con_key
-- name: ix_wlapp_house_refwl_status
+  - eot
+- name: ix_tenagree_eot
+  unique: false
+  columns:
+  - eot
+- name: ix_tenagree_master_tag_ref
+  unique: false
+  columns:
+  - master_tag_ref
+- name: ix_tenagree_present_agr_type
+  unique: false
+  columns:
+  - present
+  - agr_type
+- name: ix_tenagree_present_terminatedcot_agr_type
+  unique: false
+  columns:
+  - present
+  - terminated
+  - cot
+  - agr_type
+- name: ix_tenagree_process_group_id
+  unique: false
+  columns:
+  - process_group_id
+- name: ix_tenagree_prop_ref
+  unique: false
+  columns:
+  - prop_ref
+- name: ix_tenagree_rentgrp_ref
+  unique: false
+  columns:
+  - rentgrp_ref
+- name: ix_tenagree_rentgrp_ref_collect_cash
+  unique: false
+  columns:
+  - rentgrp_ref
+  - collect_cash
+- name: ix_tenagree_s125_issuedrtb_term
+  unique: false
+  columns:
+  - s125_issued
+  - rtb_term
+- name: ix_tenagree_terminatedcot_eot_agr_type
+  unique: false
+  columns:
+  - terminated
+  - cot
+  - eot
+  - agr_type
+- name: tenagree01
+  unique: true
+  columns:
+  - tag_ref
+- name: tenagree02
+  unique: false
+  columns:
+  - prop_ref
+- name: tenagree03
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: tenagree04
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - rentgrp_ref
+- name: tenagree_conkey
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - con_key
+- name: tenagree_sid
+  unique: false
+  columns:
+  - tenagree_sid
+- name: tenagree_tstamp
   unique: true
   columns:
   - tstamp
+- name: u_saff_rentacc
+  unique: false
+  columns:
+  - u_saff_rentacc
+- name: u_tenagree01
+  unique: false
+  columns:
+  - prop_ref
+  - cot
+- name: u_tenagree_pe
+  unique: false
+  columns:
+  - prop_ref
+  - tag_ref
+  - present
+  - rentgrp_ref
+  - agr_type
+- name: u_tenagree_pe1
+  unique: false
+  columns:
+  - rentgrp_ref
+  - terminated
+  - tag_ref
+- name: u_tenagree_pe2
+  unique: false
+  columns:
+  - rentgrp_ref
+  - active
+  - tag_ref
+  - house_ref
+- name: u_tenagree_pe3
+  unique: false
+  columns:
+  - rentgrp_ref
+  - active
+  - tag_ref
+  - house_ref
+- name: u_tenagree_pe4
+  unique: false
+  columns:
+  - prop_ref
+  - cot
+  - eot
+  - rentgrp_ref
+  - agr_type
+  - terminated
+  - present
+- name: u_tenagree_pe5
+  unique: false
+  columns:
+  - open_item
+  - comp_avail
+  - inv_type
+- name: u_tenagree_pe6
+  unique: false
+  columns:
+  - inv_type
+  - comp_avail
+  - open_item
 columns:
 - name: acc_type
   type: char(1)
@@ -370,7 +505,7 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
 - name: ten_b_forward
   type: numeric(10,2)
   description: ''

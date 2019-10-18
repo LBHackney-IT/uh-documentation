@@ -6,28 +6,44 @@ active: true
 app_area: reactive_repairs
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_rmreqst_rq_date
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - rq_date
+- name: ix_rmreqst_user_code
+  unique: false
+  columns:
+  - user_code
+- name: ix_rmreqst_vm_propref
+  unique: false
+  columns:
+  - vm_propref
+- name: ix_rmreqst_vm_proprefrq_date
+  unique: false
+  columns:
+  - vm_propref
+  - rq_date
+- name: rmreqst01
+  unique: true
+  columns:
+  - rq_ref
+- name: rmreqst02
+  unique: false
+  columns:
+  - prop_ref
+- name: rmreqst03
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: rmreqst04
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - task_ref
+- name: rmreqst_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - rmreqst_sid
+- name: rmreqst_tstamp
   unique: true
   columns:
   - tstamp

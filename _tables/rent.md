@@ -2,35 +2,51 @@
 name: rent
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: rent_transactions
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_rent_availprop_ref
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - avail
+  - prop_ref
+- name: ix_rent_house_ref
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: ix_rent_rentgrp_ref
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - rentgrp_ref
+- name: ix_rent_rentgrp_refnew_ten_eff
+  unique: false
+  columns:
+  - rentgrp_ref
+  - new_ten_eff
+- name: rent01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - prop_ref
+- name: rent02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - house_ref
+- name: rent03
+  unique: false
+  columns:
+  - rentgrp_ref
+  - prop_ref
+- name: rent_tstamp
   unique: true
   columns:
   - tstamp
+- name: u_rent_pe
+  unique: false
+  columns:
+  - rentgrp_ref
+  - comp_avail
+  - prop_ref
 columns:
 - name: actvalue
   type: bit

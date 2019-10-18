@@ -2,35 +2,29 @@
 name: ddtrans
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: direct_debits
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: IX_ddtrans_tag_ref
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - tag_ref
+- name: ddtrans01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ddbatchno
+  - ddtransno
+  - ddlineno
+- name: ddtrans_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_ddtrans_ddbatchno_ddagree_ref
+  unique: false
+  columns:
+  - ddbatchno
+  - ddagree_ref
 columns:
 - name: bank_acc
   type: char(20)
@@ -49,10 +43,16 @@ columns:
   description: ''
 - name: ddagree_ref
   type: char(20)
-  description: ''
+  description: DD Agreement Reference
+  references:
+   - ddagree
+   - ddagree_ref
 - name: ddbatchno
   type: int(4)
-  description: ''
+  description: DD Batch NUmber
+  references:
+   - ddbatch
+   - ddbatchno
 - name: ddbranch_sid
   type: int(4)
   description: ''
@@ -94,7 +94,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(12)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

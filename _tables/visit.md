@@ -6,28 +6,39 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_visit_hadiary_sid
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - hadiary_sid
+- name: ix_visit_visiting_sid
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - visiting_sid
+- name: visit_01
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - hadiary_sid
+  - visit_prop_appointment
+  - visit_appoint
+- name: visit_02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - reference_sid
+  - visitor_sid
+  - visit_prop_appointment
+- name: visit_actual
+  unique: false
+  columns:
+  - visit_actual
+- name: visit_hhref
+  unique: false
+  columns:
+  - visit_hhref
+- name: visit_sid
+  unique: false
+  columns:
+  - visit_sid
+- name: visit_tstamp
   unique: true
   columns:
   - tstamp

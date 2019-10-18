@@ -6,28 +6,19 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: adstage01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - stg_ref
+- name: adstage02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ten_ref
+- name: adstage_sid
+  unique: false
+  columns:
+  - adstage_sid
+- name: adstage_tstamp
   unique: true
   columns:
   - tstamp

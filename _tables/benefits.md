@@ -6,28 +6,23 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: benefits01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - house_ref
+  - benefit_code
+  - start_date
+  - person_no
+  - tag_ref
+- name: benefits02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - tag_ref
+- name: benefits_sid
+  unique: false
+  columns:
+  - benefits_sid
+- name: benefits_tstamp
   unique: true
   columns:
   - tstamp

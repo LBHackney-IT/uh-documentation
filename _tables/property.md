@@ -1,36 +1,64 @@
 ---
 name: property
 layout: table
-description: ''
-active: false
-app_area: ''
+description: Properties
+active: true
+app_area: property
 primary_key: prop_ref
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_property_address1
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - address1
+- name: ix_property_area_office
+  unique: false
+  columns:
+  - area_office
+- name: ix_property_letable
+  unique: false
+  columns:
+  - letable
+- name: ix_property_level_codeocc_stat
+  unique: false
+  columns:
+  - level_code
+  - occ_stat
+- name: ix_property_major_ref
+  unique: false
+  columns:
+  - major_ref
+- name: ix_property_property_sid
+  unique: false
+  columns:
+  - property_sid
+- name: ix_property_subtyp_code
+  unique: false
+  columns:
+  - subtyp_code
+- name: property01
+  unique: true
+  columns:
+  - prop_ref
+- name: property02
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: property_conkey
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - con_key
+- name: property_post_code
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - post_code
+- name: property_tstamp
   unique: true
   columns:
   - tstamp
+- name: u_property_pe
+  unique: false
+  columns:
+  - prop_ref
 columns:
 - name: ac_meth
   type: char(3)
@@ -193,7 +221,10 @@ columns:
   description: ''
 - name: la_ref
   type: char(3)
-  description: ''
+  description: Local Authority Reference
+  references:
+   - lauth
+   - la_ref
 - name: laundry
   type: bit
   description: ''
@@ -208,7 +239,10 @@ columns:
   description: ''
 - name: level_code
   type: char(1)
-  description: ''
+  description: Level Code
+  references:
+   - lulevel
+   - lu_ref
 - name: local_conn
   type: bit
   description: ''
@@ -265,7 +299,10 @@ columns:
   description: ''
 - name: ownership
   type: char(10)
-  description: ''
+  description: Owner Reference
+  references:
+   - propown
+   - own_ref
 - name: parking
   type: char(3)
   description: ''
@@ -277,7 +314,10 @@ columns:
   description: ''
 - name: post_code
   type: char(10)
-  description: ''
+  description: Post Code
+  references:
+   - postcode
+   - post_code
 - name: post_desig
   type: char(60)
   description: ''
@@ -289,7 +329,7 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
 - name: property_sid
   type: int(4)
   description: ''
@@ -334,7 +374,10 @@ columns:
   description: ''
 - name: scheme_ref
   type: char(20)
-  description: ''
+  description: Scheme Reference
+  references:
+   - scheme
+   - scheme_ref
 - name: sec_toileta
   type: bit
   description: ''
@@ -766,7 +809,10 @@ columns:
   description: ''
 - name: warden_ref
   type: char(6)
-  description: ''
+  description: Warden Reference
+  references:
+   - warden
+   - warden_ref
 - name: water_ref
   type: char(12)
   description: ''

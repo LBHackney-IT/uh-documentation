@@ -6,28 +6,19 @@ active: true
 app_area: reactive_repairs
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: rmnomdet01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - tran_no
+- name: rmnomdet_ix01
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ncost_ref
+- name: rmnomdet_sid
+  unique: false
+  columns:
+  - rmnomdet_sid
+- name: rmnomdet_tstamp
   unique: true
   columns:
   - tstamp

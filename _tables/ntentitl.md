@@ -6,31 +6,44 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_ntentitl_ntkey
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - ntkey
+- name: ntentitl02
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - tag_ref
+- name: ntentitl_sid
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ntentitl_sid
+- name: ntentitl_tstamp
   unique: true
   columns:
   - tstamp
+- name: u_ntentitl_pe
+  unique: false
+  columns:
+  - ntkey
+- name: u_ntentitl_pe1
+  unique: false
+  columns:
+  - ent_start
+  - ent_end
+  - comp_avail
+- name: u_ntentitl_pe2
+  unique: false
+  columns:
+  - ntkey
+- name: u_ntentitl_pep
+  unique: false
+  columns:
+  - tag_ref
+  - ent_start
+  - ent_end
+  - comp_avail
+  - trans_src
 columns:
 - name: comp_avail
   type: char(200)

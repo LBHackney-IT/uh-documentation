@@ -6,31 +6,25 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: auditlog01
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - date_time
+  - user_code
+  - field
+- name: auditlog_sid
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - auditlog_sid
+- name: auditlog_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_auditlog_keyfield_keyval
+  unique: false
+  columns:
+  - keyfield
+  - keyval
 columns:
 - name: auditlog_sid
   type: int(4)

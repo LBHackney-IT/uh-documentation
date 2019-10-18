@@ -6,31 +6,26 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: auser01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - user_code
+- name: auser02
+  unique: true
+  columns:
+  - user_login
+- name: auser_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - auser_sid
+- name: auser_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_auser_username
+  unique: false
+  columns:
+  - username
 columns:
 - name: au_autolnk
   type: bit

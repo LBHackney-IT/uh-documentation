@@ -6,29 +6,46 @@ active: true
 app_area: households
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: househ01
+  unique: true
+  columns:
+  - house_ref
+- name: househ02
+  unique: false
+  columns:
+  - prop_ref
+- name: househ_conkey
   unique: false
   columns:
   - con_key
-- name: ix_wlapp_house_refwl_status
+- name: househ_ix1
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - con_key
+- name: househ_tstamp
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - tstamp
+- name: ix_househ_corr_postcode
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
-  unique: true
+  - corr_postcode
+- name: ix_househ_househ_sid
+  unique: false
+  columns:
+  - househ_sid
+- name: ix_househ_post_code_post_desig_post_preamble
+  unique: false
+  columns:
+  - post_code
+  - post_desig
+  - post_preamble
+- name: ix_househ_sundryonly
+  unique: false
+  columns:
+  - sundryonly
+- name: ix_househ_tstamp
+  unique: false
   columns:
   - tstamp
 columns:

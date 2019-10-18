@@ -6,28 +6,56 @@ active: true
 app_area: reactive_repairs
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_rmworder_cancelled_datecreated
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - cancelled_date
+  - created
+- name: ix_rmworder_created
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - created
+- name: ix_rmworder_rep_type_u_saffron_job_number
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - rep_type
+  - u_saffron_job_number
+- name: ix_rmworder_sup_ref
+  unique: false
+  columns:
+  - sup_ref
+- name: ix_rmworder_vm_propref_lettabilitywo_status
+  unique: false
+  columns:
+  - vm_propref
+  - lettability
+  - wo_status
+- name: ix_rmworder_wo_status_datecomp
+  unique: false
+  columns:
+  - wo_status
+  - datecomp
+- name: rmworder01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - wo_ref
+- name: rmworder02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - prop_ref
+- name: rmworder03
+  unique: false
+  columns:
+  - sup_ref
+- name: rmworder_ix4
+  unique: false
+  columns:
+  - rq_ref
+- name: rmworder_sid
+  unique: false
+  columns:
+  - rmworder_sid
+- name: rmworder_tstamp
   unique: true
   columns:
   - tstamp

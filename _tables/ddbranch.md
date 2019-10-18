@@ -2,39 +2,34 @@
 name: ddbranch
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: direct_debits
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: IX_ddbranch
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - sort_code
+- name: ddbranch01
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - bank_ref
+  - sort_code
+- name: ddbranch_sid
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ddbranch_sid
+- name: ddbranch_tstamp
   unique: true
   columns:
   - tstamp
 columns:
 - name: bank_ref
   type: char(10)
-  description: ''
+  description: Bank Reference
+  references:
+   - ddbank
+   - bank_ref
 - name: branch_address
   type: char(200)
   description: ''
@@ -58,7 +53,7 @@ columns:
   description: ''
 - name: sort_code
   type: char(10)
-  description: ''
+  description: Branch Sort Code
 - name: tstamp
   type: timestamp
   description: ''

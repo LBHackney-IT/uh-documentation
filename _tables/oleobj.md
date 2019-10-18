@@ -6,28 +6,33 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: oleobj01
+  unique: true
+  columns:
+  - uniquer
+- name: oleobj02
+  unique: false
+  columns:
+  - entity_type
+  - entity_ref
+  - ole_name
+- name: oleobj03
   unique: false
   columns:
   - con_key
-- name: ix_wlapp_house_refwl_status
+- name: oleobj04
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - task_ref
+- name: oleobj05
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - rq_ref
+- name: oleobj_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - oleobj_sid
+- name: oleobj_tstamp
   unique: true
   columns:
   - tstamp

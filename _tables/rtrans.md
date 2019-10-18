@@ -1,33 +1,115 @@
 ---
 name: rtrans
 layout: table
-description: ''
-active: false
-app_area: ''
+description: Rent Transactions
+active: true
+app_area: rent_transactions
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: PRIME
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - batchno
+  - transno
+  - line_no
+  - line_segno
+- name: ix_rtrans_outs_value_u_alloc_status
+  unique: false
+  columns:
+  - outs_value
+  - u_alloc_status
+- name: ix_rtrans_post_year_post_prdno
+  unique: false
+  columns:
+  - post_year
+  - post_prdno
+- name: ix_rtrans_rentgroup
+  unique: false
+  columns:
+  - rentgroup
+- name: ix_rtrans_rentgroup_post_yearpost_prdno
+  unique: false
+  columns:
+  - rentgroup
+  - post_year
+  - post_prdno
+- name: ix_rtrans_rentgrouppost_year_trans_type
+  unique: false
+  columns:
+  - rentgroup
+  - post_year
+  - trans_type
+- name: ix_rtrans_tag_ref
+  unique: false
+  columns:
+  - tag_ref
+- name: ix_rtrans_tag_ref_receipted
+  unique: false
+  columns:
+  - tag_ref
+  - receipted
+- name: ix_rtrans_tag_refpost_date
+  unique: false
+  columns:
+  - tag_ref
+  - post_date
+- name: rtrans01
+  unique: true
+  columns:
+  - batchid
+  - transno
+  - line_no
+  - line_segno
+- name: rtrans02
+  unique: false
+  columns:
+  - prop_ref
+- name: rtrans03
+  unique: false
+  columns:
+  - tag_ref
+  - prd_sno
+- name: rtrans04
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: rtrans05
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
-  unique: true
-  columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - btls
+- name: rtrans08
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - adjustment
+  - rentgroup
+  - trans_type
+  - comp_avail
+  - full_days
+  - no_of_days
+  - act_prdno
+  - act_year
+- name: rtrans_idx_fund
+  unique: false
+  columns:
+  - prop_ref
+  - post_year
+  - post_prdno
+  - trans_type
+- name: rtrans_period
+  unique: false
+  columns:
+  - rentgroup
+  - adjustment
+  - trans_type
+- name: rtrans_sid
+  unique: false
+  columns:
+  - rtrans_sid
+- name: rtrans_tagref
+  unique: false
+  columns:
+  - tag_ref
+- name: rtrans_tstamp
   unique: true
   columns:
   - tstamp
@@ -52,7 +134,8 @@ columns:
   description: ''
 - name: batchno
   type: numeric(6,0)
-  description: ''
+  description: Batch Number
+  references:
 - name: btls
   type: char(19)
   description: ''
@@ -73,7 +156,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household Reference
+  references:
+   - househ
+   - house_ref
 - name: line_no
   type: int(4)
   description: ''
@@ -113,6 +199,9 @@ columns:
 - name: occ_stat
   type: char(3)
   description: ''
+  references:
+   - occstat
+   - occ_status
 - name: outs_value
   type: numeric(9,2)
   description: ''
@@ -142,7 +231,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: real_value
   type: numeric(9,2)
   description: ''
@@ -151,7 +243,10 @@ columns:
   description: ''
 - name: rentgroup
   type: char(3)
-  description: ''
+  description: Rent Group
+  references:
+   - rentgrp
+   - rentgrp_ref
 - name: rtrans_sid
   type: int(4)
   description: ''
@@ -166,7 +261,10 @@ columns:
   description: ''
 - name: tag_ref
   type: char(11)
-  description: ''
+  description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tenure
   type: char(3)
   description: ''
@@ -181,7 +279,7 @@ columns:
   description: ''
 - name: trans_type
   type: char(3)
-  description: ''
+  description: Possibly refers to both debtype and rectype
 - name: transfer
   type: char(1)
   description: ''

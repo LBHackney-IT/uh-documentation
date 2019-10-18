@@ -2,32 +2,20 @@
 name: scheme
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: property
 primary_key: 
+pseudo_pk: scheme_ref
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: scheme01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - scheme_ref
+- name: scheme_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - scheme_sid
+- name: scheme_tstamp
   unique: true
   columns:
   - tstamp
@@ -97,10 +85,10 @@ columns:
   description: ''
 - name: scheme_name
   type: char(20)
-  description: ''
+  description: Scheme Name
 - name: scheme_ref
   type: char(20)
-  description: ''
+  description: Scheme Reference
 - name: scheme_sid
   type: int(4)
   description: ''

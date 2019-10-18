@@ -6,28 +6,81 @@ active: true
 app_area: reactive_repairs
 primary_key: task_ref
 indexes:
-- name: ix_wlapp_con_key
+- name: ix_rmtask_1
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - cancel_date
+  - est_cost
+  - task_status
+  - u_interface_status
+- name: ix_rmtask_2
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+  - cancel_date
+  - job_code
+  - rep_type
+  - task_status
+- name: ix_rmtask_3
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - cancel_date
+  - sup_ref
+  - task_status
+  - rep_area
+  - datecomp
+- name: rmtask01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - task_ref
+- name: rmtask02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - wo_ref
+- name: rmtask03
+  unique: false
+  columns:
+  - sup_ref
+- name: rmtask04
+  unique: false
+  columns:
+  - prop_ref
+- name: rmtask05
+  unique: false
+  columns:
+  - ad_ref
+- name: rmtask06
+  unique: false
+  columns:
+  - statement_no
+- name: rmtask07
+  unique: false
+  columns:
+  - job_code
+- name: rmtask6
+  unique: false
+  columns:
+  - rq_ref
+  - wo_ref
+  - sup_ref
+  - prop_ref
+  - job_code
+- name: rmtask_allocated
+  unique: false
+  columns:
+  - allocated
+- name: rmtask_rq_ref
+  unique: false
+  columns:
+  - rq_ref
+- name: rmtask_sid
+  unique: false
+  columns:
+  - rmtask_sid
+- name: rmtask_source
+  unique: false
+  columns:
+  - source_order_sid
+- name: rmtask_tstamp
   unique: true
   columns:
   - tstamp

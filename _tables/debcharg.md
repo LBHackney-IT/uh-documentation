@@ -2,35 +2,61 @@
 name: debcharg
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: rent_transactions
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: debcharg01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - rentgrpref
+  - prop_ref
+  - tag_ref
+  - deb_code
+  - deb_date
+  - eff_date
+  - sb_container
+- name: debcharg02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - deb_date
+- name: debcharg03
+  unique: false
+  columns:
+  - rentgrpref
+  - prop_ref
+  - ch_prdcode
+- name: debcharg_sid
+  unique: false
+  columns:
+  - debcharg_sid
+- name: debcharg_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_debcharg_prop_ref
+  unique: false
+  columns:
+  - prop_ref
+- name: ix_debcharg_prop_ref_charged_ch_activeeff_date
+  unique: false
+  columns:
+  - prop_ref
+  - charged
+  - ch_active
+  - eff_date
+- name: ix_debcharg_rentgrpref_charged
+  unique: false
+  columns:
+  - rentgrpref
+  - charged
+- name: ix_debcharg_rentgrpref_charged_ch_activedeb_date
+  unique: false
+  columns:
+  - rentgrpref
+  - charged
+  - ch_active
+  - deb_date
 columns:
 - name: apportion
   type: bit

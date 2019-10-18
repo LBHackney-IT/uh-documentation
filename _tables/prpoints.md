@@ -2,32 +2,20 @@
 name: prpoints
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: property
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: prpoints01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - prop_ref
+  - field_ref
+- name: prpoints_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - prpoints_sid
+- name: prpoints_tstamp
   unique: true
   columns:
   - tstamp
@@ -49,7 +37,10 @@ columns:
   description: ''
 - name: prop_ref
   type: char(12)
-  description: ''
+  description: Property Reference
+  references:
+   - property
+   - prop_ref
 - name: prpoints_sid
   type: int(4)
   description: ''

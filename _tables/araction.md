@@ -6,31 +6,33 @@ active: true
 app_area: arrears
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: IX_araction
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - araction_sid
+- name: araction01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - tag_ref
+  - action_set
+  - action_no
+  - action_code
+- name: araction_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - araction_sid
+- name: araction_tstamp
   unique: true
   columns:
   - tstamp
+- name: ix_araction_araction_sid
+  unique: false
+  columns:
+  - araction_sid
+- name: ix_araction_comm_only
+  unique: false
+  columns:
+  - comm_only
 columns:
 - name: act_status
   type: char(3)

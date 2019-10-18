@@ -6,31 +6,33 @@ active: false
 app_area: ''
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: scsht01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - sc_schedule
+  - sc_genline
+- name: scsht_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - scsht_sid
+- name: scsht_tstamp
   unique: true
   columns:
   - tstamp
+- name: u_scsht02
+  unique: false
+  columns:
+  - sc_schedule
+  - prop_ref
+- name: u_scsht03
+  unique: false
+  columns:
+  - sc_schedule
+  - prop_ref
+  - sc_estact
+  - sc_nomcode
+  - sc_subcode
+  - sc_transtatus
 columns:
 - name: comp_avail
   type: varchar(80)

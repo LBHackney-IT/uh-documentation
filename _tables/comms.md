@@ -6,28 +6,25 @@ active: false
 app_area: ''
 primary_key: comms_sid
 indexes:
-- name: ix_wlapp_con_key
+- name: comms01
   unique: false
   columns:
   - con_key
-- name: ix_wlapp_house_refwl_status
+- name: comms02
   unique: false
   columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - entity_sid
+- name: comms03
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - comms_sid
+  - con_key
+  - entity_sid
+- name: comms_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - comms_sid
+- name: comms_tstamp
   unique: true
   columns:
   - tstamp

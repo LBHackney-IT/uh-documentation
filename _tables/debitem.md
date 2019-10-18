@@ -2,35 +2,89 @@
 name: debitem
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: rent_transactions
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: _u_debitem_pe
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - eff_date
+  - deb_code
+  - prop_ref
+  - tag_ref
+- name: debitem01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - prop_ref
+  - tag_ref
+  - deb_code
+  - eff_date
+  - sb_storage_no
+  - sb_container
+- name: debitem02
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - tag_ref
+  - deb_code
+- name: debitem03
+  unique: false
+  columns:
+  - prop_ref
+- name: debitem04
+  unique: false
+  columns:
+  - tag_ref
+- name: debitem05
+  unique: false
+  columns:
+  - deb_code
+  - prop_ref
+- name: debitem_sid
+  unique: false
+  columns:
+  - debitem_sid
+- name: 'debitem_tstamp '
   unique: true
   columns:
   - tstamp
+- name: ix_debitem_prop_ref2
+  unique: false
+  columns:
+  - prop_ref
+- name: ix_debitem_prop_ref_deb_code_deb_active
+  unique: false
+  columns:
+  - prop_ref
+  - deb_code
+  - deb_active
+- name: ix_debitem_prop_ref_prop_debeff_date_term_date
+  unique: false
+  columns:
+  - prop_ref
+  - prop_deb
+  - eff_date
+  - term_date
+- name: ix_debitem_tag_ref
+  unique: false
+  columns:
+  - tag_ref
+- name: ix_debitem_tag_ref_prop_deb
+  unique: false
+  columns:
+  - tag_ref
+  - prop_deb
+- name: ix_debitem_tstamp
+  unique: false
+  columns:
+  - tstamp
+- name: u_debitem_propref_tagref_debcode_effdate
+  unique: false
+  columns:
+  - prop_ref
+  - tag_ref
+  - deb_code
+  - eff_date
 columns:
 - name: actual_eff
   type: smalldatetime

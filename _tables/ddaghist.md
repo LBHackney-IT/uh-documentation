@@ -2,32 +2,16 @@
 name: ddaghist
 layout: table
 description: ''
-active: false
-app_area: ''
+active: true
+app_area: direct_debits
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
-  unique: false
-  columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
-  unique: false
-  columns:
-  - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
-  unique: false
-  columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+- name: ddaghist01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
-  unique: false
-  columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - ddagree_ref
+  - dah_uniquer
+- name: ddaghist_tstamp
   unique: true
   columns:
   - tstamp
@@ -67,7 +51,10 @@ columns:
   description: ''
 - name: ddagree_ref
   type: char(20)
-  description: ''
+  description: DD Agreement Reference
+  references:
+   - ddagree
+   - ddagree_ref
 - name: ddsched_version
   type: int(4)
   description: ''

@@ -6,28 +6,43 @@ active: true
 app_area: contacts
 primary_key: 
 indexes:
-- name: ix_wlapp_con_key
+- name: clog02
   unique: false
   columns:
-  - con_key
-- name: ix_wlapp_house_refwl_status
+  - prop_ref
+- name: clog03
+  unique: false
+  columns:
+  - tag_ref
+- name: clog04
   unique: false
   columns:
   - house_ref
-  - wl_status
-- name: ix_wlapp_u_novalet_ref
+- name: clog05
   unique: false
   columns:
-  - u_novalet_ref
-- name: ix_wlapp_wlapp_sid
+  - sup_ref
+- name: clog06
+  unique: false
+  columns:
+  - clog_attn
+- name: clog07
+  unique: false
+  columns:
+  - con_key
+- name: clog08
+  unique: false
+  columns:
+  - app_ref
+- name: conlog01
   unique: true
   columns:
-  - wlapp_sid
-- name: wlapp_send_to_cbl
+  - clog_key
+- name: conlog_sid
   unique: false
   columns:
-  - send_to_cbl
-- name: wlapp_tstamp
+  - conlog_sid
+- name: conlog_tstamp
   unique: true
   columns:
   - tstamp
