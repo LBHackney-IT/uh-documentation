@@ -2,7 +2,7 @@
 name: u_tag_move_in_221215
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

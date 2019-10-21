@@ -2,7 +2,7 @@
 name: u_costs_051110_not_changed
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

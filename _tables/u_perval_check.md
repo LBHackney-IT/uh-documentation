@@ -2,7 +2,7 @@
 name: u_perval_check
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: pval_check_ref
 indexes: []

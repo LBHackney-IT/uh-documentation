@@ -2,7 +2,7 @@
 name: propertydch
 layout: table
 description: ''
-type: unknown
+type: unused
 app_area: ''
 primary_key: dchid
 indexes:

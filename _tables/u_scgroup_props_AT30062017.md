@@ -2,7 +2,7 @@
 name: u_scgroup_props_AT30062017
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

@@ -2,7 +2,7 @@
 name: u_dbfieldu_old
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

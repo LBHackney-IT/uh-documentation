@@ -2,7 +2,7 @@
 name: u_tag_move_out_a
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

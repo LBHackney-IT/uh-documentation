@@ -2,7 +2,7 @@
 name: u_min_phase_duplicates
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

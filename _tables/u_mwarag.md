@@ -2,7 +2,7 @@
 name: u_mwarag
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: mw_seq_no
 indexes: []

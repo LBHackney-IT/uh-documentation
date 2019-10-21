@@ -2,7 +2,7 @@
 name: u_attrib_comp
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes:

@@ -2,8 +2,8 @@
 name: scincludelist
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: service_charges
 primary_key: 
 indexes:
 - name: scincludelist_idx1

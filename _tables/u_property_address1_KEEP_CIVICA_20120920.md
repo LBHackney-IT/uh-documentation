@@ -2,7 +2,7 @@
 name: u_property_address1_KEEP_CIVICA_20120920
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

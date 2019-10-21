@@ -2,8 +2,8 @@
 name: pmplprop
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: project_management
 primary_key: 
 indexes:
 - name: pmplprop01

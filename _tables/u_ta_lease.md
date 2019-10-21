@@ -2,7 +2,7 @@
 name: u_ta_lease
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

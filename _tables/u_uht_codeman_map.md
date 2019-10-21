@@ -2,7 +2,7 @@
 name: u_uht_codeman_map
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

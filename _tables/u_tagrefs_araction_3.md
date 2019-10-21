@@ -2,7 +2,7 @@
 name: u_tagrefs_araction_3
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

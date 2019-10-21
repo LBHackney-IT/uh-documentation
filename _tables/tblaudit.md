@@ -2,7 +2,7 @@
 name: tblaudit
 layout: table
 description: ''
-type: unknown
+type: unused
 app_area: ''
 primary_key: 
 indexes:

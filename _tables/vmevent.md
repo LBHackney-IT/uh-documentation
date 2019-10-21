@@ -2,8 +2,8 @@
 name: vmevent
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: void_monitoring
 primary_key: 
 indexes:
 - name: vmevent01

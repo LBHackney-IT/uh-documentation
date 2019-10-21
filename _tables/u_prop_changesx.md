@@ -2,7 +2,7 @@
 name: u_prop_changesx
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

@@ -2,7 +2,7 @@
 name: propertynormalised
 layout: table
 description: ''
-type: unknown
+type: unused
 app_area: ''
 primary_key: prop_ref
 indexes: []

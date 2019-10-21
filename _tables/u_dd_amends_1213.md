@@ -2,7 +2,7 @@
 name: u_dd_amends_1213
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

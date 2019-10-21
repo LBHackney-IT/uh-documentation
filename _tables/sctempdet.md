@@ -2,8 +2,8 @@
 name: sctempdet
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: service_charges
 primary_key: sctempdet_sid
 indexes:
 - name: sctempdet01

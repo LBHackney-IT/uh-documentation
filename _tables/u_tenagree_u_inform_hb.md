@@ -2,7 +2,7 @@
 name: u_tenagree_u_inform_hb
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

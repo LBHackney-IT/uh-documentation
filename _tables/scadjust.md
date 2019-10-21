@@ -2,8 +2,8 @@
 name: scadjust
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: service_charges
 primary_key: scadjust_sid
 indexes:
 - name: scadjust01

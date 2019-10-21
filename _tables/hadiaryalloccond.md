@@ -2,8 +2,8 @@
 name: hadiaryalloccond
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: planned_repairs
 primary_key: 
 indexes:
 - name: hadiaryalloccond01

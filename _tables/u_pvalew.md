@@ -2,7 +2,7 @@
 name: u_pvalew
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: pval_seq
 indexes: []

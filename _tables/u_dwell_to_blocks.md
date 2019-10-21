@@ -2,7 +2,7 @@
 name: u_dwell_to_blocks
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

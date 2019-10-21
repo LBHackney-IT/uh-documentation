@@ -2,7 +2,7 @@
 name: u_new_tenancy_20120703
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

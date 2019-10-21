@@ -2,7 +2,7 @@
 name: u_jdsohouse_backup_PAV_20160225
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

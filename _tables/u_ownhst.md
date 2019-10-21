@@ -2,7 +2,7 @@
 name: u_ownhst
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: so_seq_no
 indexes: []

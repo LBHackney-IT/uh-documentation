@@ -2,7 +2,7 @@
 name: u_leaswt
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: lea_swt_key
 indexes: []

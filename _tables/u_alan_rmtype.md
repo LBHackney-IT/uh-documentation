@@ -2,7 +2,7 @@
 name: u_alan_rmtype
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

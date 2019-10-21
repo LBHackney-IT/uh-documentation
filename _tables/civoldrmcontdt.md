@@ -2,7 +2,7 @@
 name: civoldrmcontdt
 layout: table
 description: ''
-type: unknown
+type: unused
 app_area: ''
 primary_key: rmcontdt_sid
 indexes: []

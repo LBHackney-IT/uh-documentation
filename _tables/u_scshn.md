@@ -2,7 +2,7 @@
 name: u_scshn
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: sc_impline
 indexes: []

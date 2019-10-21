@@ -2,8 +2,8 @@
 name: courtord
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: arrears
 primary_key: 
 indexes:
 - name: courtord_tstamp
@@ -19,7 +19,10 @@ columns:
   description: ''
 - name: court_sid
   type: int(4)
-  description: ''
+  description: Court Reference
+  references:
+   - court
+   - court_sid
 - name: courtord_applied_sid
   type: int(4)
   description: ''

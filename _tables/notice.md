@@ -2,8 +2,8 @@
 name: notice
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: arrears
 primary_key: 
 indexes:
 - name: notice_tstamp

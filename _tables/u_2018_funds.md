@@ -2,7 +2,7 @@
 name: u_2018_funds
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

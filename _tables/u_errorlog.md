@@ -2,7 +2,7 @@
 name: u_errorlog
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: error_id
 indexes: []

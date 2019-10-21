@@ -2,8 +2,8 @@
 name: hlapp
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: homelessness
 primary_key: 
 indexes:
 - name: hlapp_tstamp

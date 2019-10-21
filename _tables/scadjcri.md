@@ -2,8 +2,8 @@
 name: scadjcri
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: service_charges
 primary_key: scadjcri_sid
 indexes:
 - name: scadjcri01

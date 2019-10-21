@@ -2,7 +2,7 @@
 name: u_workcentremapping
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: supplier_ref
 indexes: []

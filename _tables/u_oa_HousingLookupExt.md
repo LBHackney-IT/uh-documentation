@@ -2,7 +2,7 @@
 name: u_oa_HousingLookupExt
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: Id
 indexes: []

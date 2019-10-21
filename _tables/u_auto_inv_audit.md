@@ -2,7 +2,7 @@
 name: u_auto_inv_audit
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: audit_no
 indexes: []

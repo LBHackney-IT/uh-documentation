@@ -2,7 +2,7 @@
 name: u_c16_jbc_bopu
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []

@@ -2,8 +2,8 @@
 name: hlahist
 layout: table
 description: ''
-type: unknown
-app_area: ''
+type: active
+app_area: homelessness
 primary_key: 
 indexes:
 - name: hlahist_tstamp

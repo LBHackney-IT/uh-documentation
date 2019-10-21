@@ -2,7 +2,7 @@
 name: u_estate_name
 layout: table
 description: ''
-type: unknown
+type: user
 app_area: ''
 primary_key: 
 indexes: []
