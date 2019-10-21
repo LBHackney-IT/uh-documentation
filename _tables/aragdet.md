@@ -22,6 +22,9 @@ columns:
 - name: arag_sid
   type: int(4)
   description: ''
+  references:
+   - arag
+   - arag_sid
 - name: aragdet_amount
   type: numeric(10,2)
   description: ''

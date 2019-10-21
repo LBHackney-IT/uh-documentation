@@ -1,7 +1,7 @@
 ---
 name: notice
 layout: table
-description: ''
+description: Court Notices
 type: active
 app_area: arrears
 primary_key: 

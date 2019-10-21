@@ -93,7 +93,10 @@ columns:
   description: ''
 - name: courtord_sid
   type: int(4)
-  description: ''
+  description: Court Order ID
+  references:
+   - courtord
+   - courtord_sid
 - name: deferral_reason
   type: char(3)
   description: ''
@@ -112,6 +115,9 @@ columns:
 - name: tag_ref
   type: char(11)
   description: Tenancy Agreement Reference
+  references:
+   - tenagree
+   - tag_ref
 - name: tstamp
   type: timestamp
   description: ''

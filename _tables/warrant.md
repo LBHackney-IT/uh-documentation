@@ -1,7 +1,7 @@
 ---
 name: warrant
 layout: table
-description: ''
+description: Court Warrants
 type: active
 app_area: arrears
 primary_key: 
@@ -20,6 +20,9 @@ columns:
 - name: court_sid
   type: int(4)
   description: ''
+  references:
+   - court
+   - court_sid
 - name: notice_sid
   type: int(4)
   description: ''

@@ -1,7 +1,7 @@
 ---
 name: court
 layout: table
-description: ''
+description: Courts
 type: active
 app_area: arrears
 primary_key: 

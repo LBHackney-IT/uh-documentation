@@ -1,7 +1,7 @@
 ---
 name: courtord
 layout: table
-description: ''
+description: Court Orders
 type: active
 app_area: arrears
 primary_key: 
@@ -64,7 +64,10 @@ columns:
   description: ''
 - name: notice_sid
   type: int(4)
-  description: ''
+  description: Notice ID
+  references:
+   - notice
+   - notice_sid
 - name: tstamp
   type: timestamp
   description: ''

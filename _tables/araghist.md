@@ -23,6 +23,9 @@ columns:
 - name: arag_ref
   type: char(15)
   description: ''
+  references:
+   - arag
+   - arag_ref
 - name: araghist_sid
   type: int(4)
   description: ''
