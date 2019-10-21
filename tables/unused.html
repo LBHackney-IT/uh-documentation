@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<a href="./">Active Tables</a>
+<a href="./unknown">Unknown Tables</a>
+
 {% assign unused_tables = site.tables | where: 'type', 'unused' %}
 <h1>{{ unused_tables.size }} Unused Tables</h1>
 <table>

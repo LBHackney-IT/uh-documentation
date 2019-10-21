@@ -23,18 +23,11 @@ layout: default
         <td>{{ col.name }}</td>
         <td>{{ col.type }}</td>
         <td>{{ col.description }}</td>
-        <td>{% if col.references %}
-        {% assign ref = nil %}
-        {% for table in site.tables %}
-          {% if table.name == col.references[0] %}
-            {% assign ref = table %}
+        <td>
+          {% if col.references %}
+            <a href="/tables/{{ col.references[0] }}.html">{{ col.references[0] }}</a> ({{ col.references[1] }})
           {% endif %}
-        {% endfor %}
-        {% if ref %}
-          <a href="{{ ref.url }}">{{ ref.name }}</a>
-        {% else %}
-        {{ col.references[0] }}
-        {% endif %}({{ col.references[1] }}){% endif %}</td>
+        </td>
       </tr>
     {% endfor %}
   </tbody>

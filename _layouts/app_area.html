@@ -25,11 +25,7 @@ layout: default
       {% for col in my_table.columns %}
         {% if col.references %}
           {% capture temp %}
-            {% for table in site.tables %}
-              {% if table.name == col.references[0] %}
-                <a href="{{ table.url }}">{{ table.name }}</a>
-              {% endif %}
-            {% endfor %}
+            <a href="/tables/{{ col.references[0] }}.html">{{ col.references[0] }}</a>
           {% endcapture %}
           {% assign temp = temp | strip %}
           {% assign refs = refs | push: temp %}
