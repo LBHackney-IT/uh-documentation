@@ -45,7 +45,11 @@ columns:
   description: ''
 - name: action_code
   type: char(3)
-  description: ''
+  description: Action Code
+  notes: Not all records reference the arpolicy table
+  references:
+   - arpolicy
+   - action_code
 - name: action_comment
   type: text
   description: ''
