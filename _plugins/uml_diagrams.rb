@@ -77,9 +77,10 @@ class UmlDiagram
   end
 
   def self.generate_uml(tables, options)
+    options[:icon] ||= ['T', '#FFAAAA']
     <<~EOF
     @startuml
-      !define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+      !define Table(name,desc) class name as "desc" << (#{options[:icon].join(',')}) >>
       !define primary_key(x) <b>x</b>
       !define unique(x) <color:green>x</color>
       !define reference(x) <u>x</u>
@@ -204,7 +205,7 @@ module Jekyll
           area
         }
 
-      UmlDiagram.generate_uml(area_index, reduced: false)
+      UmlDiagram.generate_uml(area_index, reduced: false, icon: ['A', '#AAAAFF'])
     end
   end
   
