@@ -3,6 +3,10 @@ layout: default
 ---
 <h1>Application Areas</h1>
 
+{% plantuml %}
+  {% summary_app_area_diagram %}
+{% endplantuml %}
+
 <ul>
 {% for area in site.application_areas %}
   <li><a href="{{ area.url }}">{{ area.name }}</a></li>

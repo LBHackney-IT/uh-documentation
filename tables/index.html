@@ -9,6 +9,15 @@ layout: default
 
 <h1>{{ active_tables.size }} Active Tables</h1>
 
+{% comment %}
+{% plantuml %}
+  {% full_diagram %}
+{% endplantuml %}
+{% plantuml %}
+  {% reduced_diagram %}
+{% endplantuml %}
+{% endcomment %}
+
 <table>
   <thead>
     <tr>
