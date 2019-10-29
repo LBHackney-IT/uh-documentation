@@ -4,9 +4,11 @@
 #
 version: 2.1
 
-orbs:
-  aws-cli: circleci/aws-cli@0.1.13
-
+general:
+  branches:
+    only:
+      - master
+      
 commands:
   setup-env:
     description: "Sets up all dependencies"
