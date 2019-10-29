@@ -19,6 +19,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - bin
+  - "*.uml"
+  - README.md
 
 emptyarray: []
 
