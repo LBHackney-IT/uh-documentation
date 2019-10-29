@@ -1,6 +1,12 @@
 #!/bin/bash
 
 sed -i 's/uml/#uml/g' .gitignore
+
+
+git config --global -l
+git config --global user.email circleci@circleci
+git config --global user.name CircleCI
+
 bundle exec jgd
 RESULT=$?
 sed -i 's/#uml/uml/g' .gitignore
