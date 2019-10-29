@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Warrant</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>warrant</h1>
+<p>Court Warrants</p>
+
+
+
+<p>Table Type: active</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>comp_avail</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_display</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>court_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+            <a href="/tables/court.html">court</a> (court_sid)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>notice_sid</td>
+        <td>int(4)</td>
+        <td>Notice ID</td>
+        <td>
+          
+            <a href="/tables/notice.html">notice</a> (notice_sid)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tstamp</td>
+        <td>timestamp</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_eviction_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_expiry_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_fees</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_iss_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_pmandata</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_ref</td>
+        <td>char(20)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_short_ref</td>
+        <td>char(20)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warr_status</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warrant_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </main>
+    </body>
+</html>

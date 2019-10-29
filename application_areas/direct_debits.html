@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Direct_debits</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>Direct Debits</h1>
+
+
+
+
+<h2>Summary Relationship Diagram</h2>
+<a href='/uml/3bd22e164e5c79024c764fa591c5044e.svg' target='_blank'><img class='plantuml' src='/uml/3bd22e164e5c79024c764fa591c5044e.svg' /></a>
+
+<h2>Tables</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+  
+  
+    <tr>
+      <td><a href="/tables/ddagacc.html">ddagacc</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddagree.html">ddagree</a>, <a href="/tables/tenagree.html">tenagree</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddaghist.html">ddaghist</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddagree.html">ddagree</a>, <a href="/tables/tenagree.html">tenagree</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddagree.html">ddagree</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddbankacc.html">ddbankacc</a>, <a href="/tables/ddbacsco.html">ddbacsco</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddbacsco.html">ddbacsco</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddbank.html">ddbank</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddbankacc.html">ddbankacc</a></td>
+      <td>Bank Account</td>
+      <td>
+      
+      
+      <a href="/tables/househ.html">househ</a>, <a href="/tables/ddbranch.html">ddbranch</a>, <a href="/tables/tenagree.html">tenagree</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddbatch.html">ddbatch</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddbranch.html">ddbranch</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddbank.html">ddbank</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddsched.html">ddsched</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddbatch.html">ddbatch</a>, <a href="/tables/ddagree.html">ddagree</a>, <a href="/tables/tenagree.html">tenagree</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddschedver.html">ddschedver</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddagree.html">ddagree</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/ddtrans.html">ddtrans</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/ddagree.html">ddagree</a>, <a href="/tables/ddbatch.html">ddbatch</a>, <a href="/tables/tenagree.html">tenagree</a>
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<h2>Full Relationship Diagram</h2>
+<a href='/uml/c4624b286980a8ceced1ab7ad15bbc6d.svg' target='_blank'><img class='plantuml' src='/uml/c4624b286980a8ceced1ab7ad15bbc6d.svg' /></a>
+
+      </main>
+    </body>
+</html>

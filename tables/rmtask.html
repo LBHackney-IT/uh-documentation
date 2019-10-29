@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Rmtask</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>rmtask</h1>
+<p></p>
+
+
+
+<p>Table Type: active</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>act_cost</td>
+        <td>numeric(9,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>act_job</td>
+        <td>char(6)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ad_ref</td>
+        <td>char(10)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>advice</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>advice_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>allocated</td>
+        <td>numeric(6,0)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>apoint_time</td>
+        <td>char(8)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>appointkept</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>appointkept_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>appointment</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>att_eff</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>att_loc</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>att_ref</td>
+        <td>char(6)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>auth_by</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>auth_date</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>auth_wait</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>authorised</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>auto_generated</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>caller</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>caller_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>cancel_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>cancel_ref</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>cancel_user</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>change_reason</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>child_task</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>cis</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_avail</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_display</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>complete</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>completed</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>composite_sor</td>
+        <td>char(11)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>courtious</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>courtious_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>created</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>cust_note</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>date_due</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>date_invoiced</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>datecomp</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>def_comment</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>def_reason</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>defective</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>dep_task_ref</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>est_cost</td>
+        <td>numeric(9,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>est_cost_ori</td>
+        <td>numeric(7,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>est_factor</td>
+        <td>char(1)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>est_type</td>
+        <td>char(1)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>est_units</td>
+        <td>numeric(8,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>est_units_ori</td>
+        <td>numeric(10,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>fc</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>g_period</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>gen_task</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>h_expected</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>historic</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>insp_canc_reason</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>insp_reason</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>insp_result</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>instructed</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>invoice_no</td>
+        <td>varchar(15)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>is_sundry</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>issue_by</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>issued</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>job_code</td>
+        <td>char(8)</td>
+        <td>Job Code</td>
+        <td>
+          
+            <a href="/tables/rmjob.html">rmjob</a> (job_code)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>lettability</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>oritask_ref</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>perc_complete</td>
+        <td>numeric(6,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>plan_ref</td>
+        <td>char(15)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>pocedure_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>post_insp</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>post_inspected</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>posti_by</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>posti_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>posti_reason</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>posti_result</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>posti_sys</td>
+        <td>char(1)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>postinspection</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>preinspection</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>priority</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>priority_ori</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>prodedure</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>prog_com</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>prop_ref</td>
+        <td>char(12)</td>
+        <td>Property Reference</td>
+        <td>
+          
+            <a href="/tables/property.html">property</a> (prop_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>punctual</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>punctual_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>recall</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rep_anal</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rep_area</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rep_class</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rep_subarea</td>
+        <td>char(6)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rep_type</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>reported</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rmtask_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_location</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_ref</td>
+        <td>char(8)</td>
+        <td>Repair Reference</td>
+        <td>
+          
+            <a href="/tables/rmreqst.html">rmreqst</a> (rq_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>s_liable</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>satisfied_n</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>satisfield</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>sor_contract</td>
+        <td>char(12)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>source_order_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>source_order_task</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>source_task</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>statement_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>statement_no</td>
+        <td>char(20)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>sup_ref</td>
+        <td>char(12)</td>
+        <td>Supplier Reference</td>
+        <td>
+          
+            <a href="/tables/supplier.html">supplier</a> (sup_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>suspended</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>task_no</td>
+        <td>numeric(8,0)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>task_ref</td>
+        <td>int(4)</td>
+        <td>Task Reference</td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>task_status</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>task_text</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>task_type</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tensatcomments</td>
+        <td>char(100)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tobeinvoiced</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>trade</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ts_auto_target</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ts_target</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tstamp</td>
+        <td>timestamp</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_interface_date</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_interface_status</td>
+        <td>char(1)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_serv_line</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_work_type_group</td>
+        <td>char(14)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>unit_narr</td>
+        <td>char(10)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>user_code</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>variation</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>variation_det</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>vat_amt</td>
+        <td>numeric(6,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>vat_code</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>vat_rate</td>
+        <td>numeric(6,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>wo_ref</td>
+        <td>char(10)</td>
+        <td>Work Order Reference</td>
+        <td>
+          
+            <a href="/tables/rmworder.html">rmworder</a> (wo_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>wo_user</td>
+        <td>char(10)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>wo_version</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </main>
+    </body>
+</html>

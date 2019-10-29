@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>U_wlmember</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>u_wlmember</h1>
+<p></p>
+
+
+
+<p>Table Type: user</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>app_ref</td>
+        <td>char(10)</td>
+        <td>Application Reference</td>
+        <td>
+          
+            <a href="/tables/wlapp.html">wlapp</a> (app_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>health</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>hearingimp_type</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>learndisab_type</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>learning_disability_</td>
+        <td>varchar(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>medical_notes</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>medteam_rcv</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>medteam_ref</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mental_health_other</td>
+        <td>varchar(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mhealth_type</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>person_no</td>
+        <td>numeric(2,0)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>physdisab_type</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rcd_info_fromgp</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_info_fromgp</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_appeal_outcome</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_date_med_comp</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_date_med_req</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_dla_care</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_dla_mobility</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_med_app_outdate</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_med_appeal_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_med_ass_type</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_med_gp_addr</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_med_grad_award</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_med_lett_gp</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_out_hearing</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_out_learn</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_out_mental</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_out_phys</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_out_visual</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_outcome_assess</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>valid_cond</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>valid_cond_reason</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>visualimp_type</td>
+        <td>varchar(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </main>
+    </body>
+</html>

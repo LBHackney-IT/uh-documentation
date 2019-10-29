@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Rmreqst</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>rmreqst</h1>
+<p></p>
+
+
+
+<p>Table Type: active</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>apoint_time</td>
+        <td>char(30)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>appointment</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_avail</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_display</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>confsup_ref</td>
+        <td>char(10)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>h_callertype</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>h_preinsp</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>h_verbal_date</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>hh_ref</td>
+        <td>char(10)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>house_ref</td>
+        <td>char(10)</td>
+        <td>Household ID</td>
+        <td>
+          
+            <a href="/tables/househ.html">househ</a> (house_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>person_no</td>
+        <td>numeric(2,0)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>preinsp_task</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>preinspect</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>prop_ref</td>
+        <td>char(12)</td>
+        <td>Property Reference</td>
+        <td>
+          
+            <a href="/tables/property.html">property</a> (prop_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rep_officer</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>repnotify_dt</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rmreqst_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_access</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_cancel</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_cancel_date</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_cancelby</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_comment</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_date</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_date_due</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_deferrals</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_deferred_to</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_friam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_fripm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_frisr</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_linked</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_loc</td>
+        <td>char(10)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_location</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_locdetail</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_monam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_monpm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_monsr</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_name</td>
+        <td>char(40)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_open</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_overall_status</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_overall_status_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_phone</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_priority</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_problem</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_ref</td>
+        <td>char(8)</td>
+        <td>Repair Ref</td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_satam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_satpm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_status</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_sunam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_sunpm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_sys_preinsp</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_thuam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_thupm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_thusr</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_tueam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_tuepm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_tuesr</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_type</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_user</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_wedam</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_wedpm</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>rq_wedsr</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>supref_reason</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>sus_haz</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>task_ref</td>
+        <td>int(4)</td>
+        <td>Task Reference</td>
+        <td>
+          
+            <a href="/tables/rmtask.html">rmtask</a> (task_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tstamp</td>
+        <td>timestamp</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_recharge_rep</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_saffron_job_number</td>
+        <td>char(12)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>user_code</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>vm_propref</td>
+        <td>char(16)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>warden_ref</td>
+        <td>char(6)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </main>
+    </body>
+</html>

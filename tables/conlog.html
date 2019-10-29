@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Conlog</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>conlog</h1>
+<p>Contact Log</p>
+
+
+
+<p>Table Type: active</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>app_ref</td>
+        <td>char(10)</td>
+        <td>Application Reference</td>
+        <td>
+          
+            <a href="/tables/wlapp.html">wlapp</a> (app_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_actioncomment</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_actiondate</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_actioned</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_actionstatus</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_attn</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_category</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_date</td>
+        <td>datetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_details</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_extern_id</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_extern_source</td>
+        <td>varchar(50)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_general</td>
+        <td>image</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_key</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_telno</td>
+        <td>varchar(50)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>clog_type</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_address</td>
+        <td>text</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_avail</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_display</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_tel</td>
+        <td>char(20)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>complainant</td>
+        <td>char(20)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comptype</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>con_key</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>conlog_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>firstcomplaint</td>
+        <td>bit</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>house_ref</td>
+        <td>char(10)</td>
+        <td>Household Reference</td>
+        <td>
+          
+            <a href="/tables/househ.html">househ</a> (house_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ole_name</td>
+        <td>char(50)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>prop_ref</td>
+        <td>char(12)</td>
+        <td>Property Reference</td>
+        <td>
+          
+            <a href="/tables/property.html">property</a> (prop_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>sup_ref</td>
+        <td>char(12)</td>
+        <td>Supplier Reference</td>
+        <td>
+          
+            <a href="/tables/supplier.html">supplier</a> (sup_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tag_ref</td>
+        <td>char(11)</td>
+        <td>Tenancy Agreement Reference</td>
+        <td>
+          
+            <a href="/tables/tenagree.html">tenagree</a> (tag_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tstamp</td>
+        <td>timestamp</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>user_code</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </main>
+    </body>
+</html>

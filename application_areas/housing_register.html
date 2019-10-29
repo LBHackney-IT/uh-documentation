@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Housing_register</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>Housing Register</h1>
+
+
+
+
+<h2>Summary Relationship Diagram</h2>
+<a href='/uml/3e152a90bc9d449a0fa6522f7e9f0f7d.svg' target='_blank'><img class='plantuml' src='/uml/3e152a90bc9d449a0fa6522f7e9f0f7d.svg' /></a>
+
+<h2>Tables</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+  
+  
+    <tr>
+      <td><a href="/tables/cblbid.html">cblbid</a></td>
+      <td>Choice Based Lettings Bid</td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/property.html">property</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlaben.html">wlaben</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlacap.html">wlacap</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlacpfac.html">wlacpfac</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlaction.html">wlaction</a></td>
+      <td>The definition of the action codes</td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlaexp.html">wlaexp</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlafield.html">wlafield</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlahist.html">wlahist</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlaction.html">wlaction</a>, <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/property.html">property</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlalist.html">wlalist</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlaneeds.html">wlaneeds</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlapoint.html">wlapoint</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlapp.html">wlapp</a></td>
+      <td>Waiting List Application</td>
+      <td>
+      
+      
+      <a href="/tables/househ.html">househ</a>, <a href="/tables/property.html">property</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlappneeds.html">wlappneeds</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlappneedsall.html">wlappneedsall</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlapreva.html">wlapreva</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlautoneedc.html">wlautoneedc</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlautoneedh.html">wlautoneedh</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlautoneedn.html">wlautoneedn</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlautop.html">wlautop</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlcore.html">wlcore</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/househ.html">househ</a>, <a href="/tables/property.html">property</a>, <a href="/tables/tenagree.html">tenagree</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlcpd.html">wlcpd</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlcph.html">wlcph</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlcri.html">wlcri</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wldpoint.html">wldpoint</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlfields.html">wlfields</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlist.html">wlist</a></td>
+      <td>The definition of the bands in the Housing Register</td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlmember.html">wlmember</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/contacts.html">contacts</a>, <a href="/tables/househ.html">househ</a>, <a href="/tables/property.html">property</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlocomm.html">wlocomm</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wloffers.html">wloffers</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/househ.html">househ</a>, <a href="/tables/property.html">property</a>, <a href="/tables/tenagree.html">tenagree</a>, <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlparam.html">wlparam</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlprrent.html">wlprrent</a></td>
+      <td></td>
+      <td>
+      
+      
+      
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wlshortlist.html">wlshortlist</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>, <a href="/tables/wlist.html">wlist</a>
+      </td>
+    </tr>
+  
+    <tr>
+      <td><a href="/tables/wltefund.html">wltefund</a></td>
+      <td></td>
+      <td>
+      
+      
+      <a href="/tables/wlapp.html">wlapp</a>
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<h2>Full Relationship Diagram</h2>
+<a href='/uml/043f4bc0cb5e1273c0f6540373d1b35a.svg' target='_blank'><img class='plantuml' src='/uml/043f4bc0cb5e1273c0f6540373d1b35a.svg' /></a>
+
+      </main>
+    </body>
+</html>

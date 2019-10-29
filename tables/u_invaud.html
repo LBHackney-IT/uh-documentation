@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>U_invaud</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="/assets/style.css">
+    </head>
+    <body>
+      <header>
+        <a href="/"><img src="/assets/hackney-logo.png"></a>
+        <a href="/"><h1>UH Documentation</h1></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/">Application Areas</a></li>
+          <li><a href="/tables/">Tables</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h1>u_invaud</h1>
+<p></p>
+
+
+
+<p>Table Type: user</p>
+
+<h2>Columns</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>References</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td>comp_avail</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>comp_display</td>
+        <td>char(200)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>house_ref</td>
+        <td>char(10)</td>
+        <td>Household ID</td>
+        <td>
+          
+            <a href="/tables/househ.html">househ</a> (house_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_bal_at_inv</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_int_accrued</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_int_debited</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_age</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_amount</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_date</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_discount</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_os_amt</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_payments</td>
+        <td>numeric(16,2)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_inv_status</td>
+        <td>char(1)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_invno</td>
+        <td>char(15)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_last_updated</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_paid_status</td>
+        <td>char(1)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_ppd_approved_by</td>
+        <td>char(3)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_ppd_approved_on</td>
+        <td>smalldatetime</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>mw_scheme_ref</td>
+        <td>char(15)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>prop_ref</td>
+        <td>char(12)</td>
+        <td>Property Reference</td>
+        <td>
+          
+            <a href="/tables/property.html">property</a> (prop_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tag_ref</td>
+        <td>char(11)</td>
+        <td>Tenancy Agreement Reference</td>
+        <td>
+          
+            <a href="/tables/tenagree.html">tenagree</a> (tag_ref)
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>tstamp</td>
+        <td>timestamp</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+      <tr>
+        <td>u_invaud_sid</td>
+        <td>int(4)</td>
+        <td></td>
+        <td>
+          
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+      </main>
+    </body>
+</html>
