@@ -23,14 +23,15 @@ layout: default
   {% assign my_tables = site.tables | where: 'app_area', page.app_id %}
   {% for my_table in my_tables %}
     <tr>
-      <td><a href="{{ my_table.url }}">{{ my_table.name }}</a></td>
+      <td><a href="{{ my_table.url | relative_url }}">{{ my_table.name }}</a></td>
       <td>{{ my_table.description }}</td>
       <td>
       {% assign refs = site.emptyarray %}
       {% for col in my_table.columns %}
         {% if col.references %}
+          {% capture url %}/tables/{{ col.references[0] }}.html{% endcapture %}
           {% capture temp %}
-            <a href="/tables/{{ col.references[0] }}.html">{{ col.references[0] }}</a>
+            <a href="{{ url | relative_url }}">{{ col.references[0] }}</a>
           {% endcapture %}
           {% assign temp = temp | strip %}
           {% assign refs = refs | push: temp %}

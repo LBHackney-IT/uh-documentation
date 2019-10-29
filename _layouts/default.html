@@ -9,13 +9,13 @@
     </head>
     <body>
       <header>
-        <a href="{{ '/' | relative_url }}"><img src="/assets/hackney-logo.png"></a>
+        <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/hackney-logo.png' | relative_url }}" alt="Hackney Logo"></a>
         <a href="{{ '/' | relative_url }}"><h1>{{ site.title}}</h1></a>
       </header>
       <nav>
         <ul>
-          <li><a href="/">Application Areas</a></li>
-          <li><a href="/tables/">Tables</a></li>
+          <li><a href="{{ '/' | relative_url }}">Application Areas</a></li>
+          <li><a href="{{ '/tables/' | relative_url }}">Tables</a></li>
         </ul>
       </nav>
       <main>

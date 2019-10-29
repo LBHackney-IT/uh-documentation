@@ -1,0 +1,3 @@
+#!/bin/bash
+
+htmlproofer --assume-extension --url_swap "/uh-documentation:" ./_site

@@ -25,7 +25,8 @@ layout: default
         <td>{{ col.description }}</td>
         <td>
           {% if col.references %}
-            <a href="/tables/{{ col.references[0] }}.html">{{ col.references[0] }}</a> ({{ col.references[1] }})
+            {% capture url %}/tables/{{ col.references[0] }}.html{% endcapture %}
+            <a href="{{ url | relative_url }}">{{ col.references[0] }}</a> ({{ col.references[1] }})
           {% endif %}
         </td>
       </tr>

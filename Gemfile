@@ -6,6 +6,7 @@ gem "tiny_tds"
 gem "activerecord-sqlserver-adapter", "4.2.18"
 gem "front_matter_parser"
 gem "jgd"
+gem "html-proofer"
 
 group :jekyll_plugins do
 end

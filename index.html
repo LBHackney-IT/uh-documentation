@@ -9,6 +9,6 @@ layout: default
 
 <ul>
 {% for area in site.application_areas %}
-  <li><a href="{{ area.url }}">{{ area.name }}</a></li>
+  <li><a href="{{ area.url | relative_url }}">{{ area.name }}</a></li>
 {% endfor %}
 </ul>

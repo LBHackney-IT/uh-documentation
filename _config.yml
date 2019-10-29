@@ -23,3 +23,5 @@ exclude:
 emptyarray: []
 
 title: UH Documentation
+
+baseurl: /uh-documentation
