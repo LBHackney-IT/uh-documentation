@@ -54,6 +54,9 @@ jobs:
       - run:
           name: run tests
           command: ./bin/test
+      - add_ssh_keys:
+          fingerprints:
+            - "99:c2:c0:73:ef:72:8a:6c:af:6d:3e:0b:5e:b9:db:0d"
       - run:
           name: deploy
           command: ./bin/deploy
