@@ -51,7 +51,10 @@ columns:
    - prop_ref
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+   - rmtask
+   - task_ref
 - name: tstamp
   type: timestamp
   description: ''

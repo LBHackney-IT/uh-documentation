@@ -46,7 +46,7 @@ columns:
   description: ''
 - name: app_date
   type: smalldatetime
-  description: ''
+  description: Application Date
 - name: app_notes
   type: text
   description: ''
@@ -142,7 +142,7 @@ columns:
   description: ''
 - name: fin_date
   type: smalldatetime
-  description: ''
+  description: Unused
 - name: hb_status
   type: char(1)
   description: ''
@@ -160,7 +160,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: house_savings
   type: numeric(12,2)
   description: ''

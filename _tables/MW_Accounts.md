@@ -13,9 +13,12 @@ columns:
 - name: comp_display
   type: char(200)
   description: ''
-- name: House_Ref
+- name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: MW_Acc_Number
   type: char(10)
   description: ''

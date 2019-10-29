@@ -4,7 +4,8 @@ layout: table
 description: Properties
 type: active
 app_area: property
-primary_key: prop_ref
+primary_key: 
+pseudo_pk: prop_ref
 indexes:
 - name: ix_property_address1
   unique: false
@@ -200,7 +201,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: housing_officer
   type: char(3)
   description: ''

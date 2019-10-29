@@ -9,7 +9,10 @@ indexes: []
 columns:
 - name: hlapp_ref
   type: int(4)
-  description: ''
+  description: Homelessness Application Reference
+  references:
+   - hlapp
+   - hlapp_ref
 - name: u_app_stat
   type: char(3)
   description: ''

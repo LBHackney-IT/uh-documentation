@@ -1,10 +1,11 @@
 ---
 name: wlaction
 layout: table
-description: ''
+description: The definition of the action codes
 type: active
 app_area: housing_register
 primary_key: 
+pseudo_pk: act_ref
 indexes:
 - name: wlaction01
   unique: true

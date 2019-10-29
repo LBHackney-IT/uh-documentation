@@ -97,7 +97,10 @@ columns:
   description: ''
 - name: wl_ref
   type: char(3)
-  description: ''
+  description: Waiting List Reference
+  references:
+   - wlist
+   - wl_ref
 - name: wl_status
   type: char(3)
   description: ''

@@ -62,7 +62,10 @@ columns:
   description: ''
 - name: wl_ref
   type: char(3)
-  description: ''
+  description: Waiting List Reference
+  references:
+   - wlist
+   - wl_ref
 - name: wlan_group
   type: int(4)
   description: ''

@@ -50,7 +50,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: letter_printed
   type: datetime
   description: ''
@@ -158,7 +161,10 @@ columns:
   description: ''
 - name: wl_ref
   type: char(3)
-  description: ''
+  description: Waiting List Reference
+  references:
+   - wlist
+   - wl_ref
 - name: wloffers_sid
   type: int(4)
   description: ''

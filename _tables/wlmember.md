@@ -122,7 +122,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: initials
   type: char(3)
   description: ''

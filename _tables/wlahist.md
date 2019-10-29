@@ -22,7 +22,10 @@ indexes:
 columns:
 - name: action_code
   type: char(3)
-  description: ''
+  description: Action Code
+  references:
+   - wlaction
+   - act_ref
 - name: action_date
   type: datetime
   description: ''

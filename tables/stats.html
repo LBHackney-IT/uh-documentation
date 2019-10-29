@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<h1>Common Column Names</h1>
+
+<table>
+  <tr>
+    <td>Column</td>
+    <td>Count</td>
+  </tr>
+{% for i in (1..30) %}
+  <tr>
+    <td>{{ site.data.db_stats.column_counts[i].name }}</td>
+    <td>{{ site.data.db_stats.column_counts[i].count }}</td>
+  </tr>
+{% endfor %}
+</table>
+
+<h1>Most Referred to Columns</h1>
+
+<table>
+  <tr>
+    <td>Table</td>
+    <td>Column</td>
+    <td>Count</td>
+  </tr>
+{% for i in (1..30) %}
+  <tr>
+    <td>{{ site.data.db_stats.column_links[i].table }}</td>
+    <td>{{ site.data.db_stats.column_links[i].column }}</td>
+    <td>{{ site.data.db_stats.column_links[i].count }}</td>
+  </tr>
+{% endfor %}
+</table>

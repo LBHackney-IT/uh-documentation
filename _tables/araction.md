@@ -4,7 +4,8 @@ layout: table
 description: Arrears Action Diary
 type: active
 app_area: arrears
-primary_key: 
+primary_key:
+pseudo_pk: araction_sid 
 indexes:
 - name: IX_araction
   unique: false
@@ -109,7 +110,10 @@ columns:
   description: ''
 - name: notice_sid
   type: int(4)
-  description: ''
+  description: Notice ID
+  references:
+   - notice
+   - notice_sid
 - name: ole_obj
   type: image
   description: ''
@@ -133,7 +137,10 @@ columns:
   description: ''
 - name: warrant_sid
   type: int(4)
-  description: ''
+  description: Warrant ID
+  references:
+   - warrant
+   - warrant_sid
 relations: []
 pseudo_pk: 
 ---

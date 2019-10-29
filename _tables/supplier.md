@@ -5,6 +5,7 @@ description: ''
 type: active
 app_area: planned_repairs
 primary_key: 
+pseudo_pk: sup_ref
 indexes:
 - name: supplier01
   unique: true
@@ -188,7 +189,7 @@ columns:
   description: ''
 - name: sup_ref
   type: char(12)
-  description: ''
+  description: Supplier Reference
 - name: sup_tel
   type: char(16)
   description: ''

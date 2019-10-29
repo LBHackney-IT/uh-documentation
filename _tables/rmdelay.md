@@ -70,7 +70,10 @@ columns:
   - rq_ref
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+   - rmtask
+   - task_ref
 - name: taskdate_due
   type: datetime
   description: ''

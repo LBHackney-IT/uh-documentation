@@ -25,7 +25,10 @@ columns:
    - court_sid
 - name: notice_sid
   type: int(4)
-  description: ''
+  description: Notice ID
+  references:
+   - notice
+   - notice_sid
 - name: tstamp
   type: timestamp
   description: ''

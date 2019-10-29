@@ -9,7 +9,10 @@ indexes: []
 columns:
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: member_sid
   type: int(4)
   description: ''

@@ -24,7 +24,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: line_no
   type: int(4)
   description: ''
@@ -129,7 +132,10 @@ columns:
    - tag_ref
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+   - rmtask
+   - task_ref
 - name: transno
   type: int(4)
   description: ''

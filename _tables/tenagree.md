@@ -5,6 +5,7 @@ description: ''
 type: active
 app_area: tenancies
 primary_key: 
+pseudo_pk: tag_ref
 indexes:
 - name: idx_tenure
   unique: false
@@ -283,7 +284,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household Reference
+  references:
+   - househ
+   - house_ref
 - name: intro_date
   type: smalldatetime
   description: ''
@@ -445,7 +449,10 @@ columns:
   description: ''
 - name: rentgrp_ref
   type: char(3)
-  description: ''
+  description: Rent Group ID
+  references:
+   - rentgrp
+   - rentgrp_ref
 - name: revdatann
   type: char(3)
   description: ''
@@ -493,7 +500,10 @@ columns:
   description: ''
 - name: sup_ref
   type: char(12)
-  description: ''
+  description: Supplier ID
+  references:
+   - supplier
+   - sup_ref
 - name: suppossorder
   type: bit
   description: ''
@@ -509,6 +519,7 @@ columns:
 - name: tag_ref
   type: char(11)
   description: Tenancy Agreement Reference
+  pk: true
 - name: ten_b_forward
   type: numeric(10,2)
   description: ''

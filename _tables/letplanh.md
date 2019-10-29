@@ -73,7 +73,10 @@ columns:
   description: ''
 - name: wl_ref
   type: char(3)
-  description: ''
+  description: Waiting List Reference
+  references:
+   - wlist
+   - wl_ref
 relations: []
 pseudo_pk: 
 ---

@@ -81,7 +81,10 @@ columns:
   description: ''
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+   - rmtask
+   - task_ref
 - name: u_orig_wo_ref
   type: char(10)
   description: ''

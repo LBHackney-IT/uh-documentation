@@ -5,6 +5,7 @@ description: ''
 type: active
 app_area: homelessness
 primary_key: 
+pseudo_pk: hlapp_ref
 indexes:
 - name: hlapp_tstamp
   unique: true
@@ -53,7 +54,7 @@ columns:
   description: ''
 - name: hlapp_ref
   type: int(4)
-  description: ''
+  description: Homelessness Application Reference
 - name: hlapp_sid
   type: int(4)
   description: ''
@@ -77,7 +78,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: joint_ten
   type: bit
   description: ''

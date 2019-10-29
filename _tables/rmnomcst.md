@@ -114,7 +114,10 @@ columns:
   description: ''
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+   - rmtask
+   - task_ref
 - name: task_status
   type: char(3)
   description: ''

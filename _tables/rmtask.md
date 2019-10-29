@@ -415,9 +415,6 @@ columns:
 - name: task_ref
   type: int(4)
   description: Task Reference
-  references:
-  - rmtrans
-  - task_ref
 - name: task_status
   type: char(3)
   description: ''

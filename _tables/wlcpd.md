@@ -65,7 +65,10 @@ columns:
   description: ''
 - name: wl_ref
   type: char(3)
-  description: ''
+  description: Waiting List Reference
+  references:
+   - wlist
+   - wl_ref
 - name: wlcpd_sid
   type: int(4)
   description: ''

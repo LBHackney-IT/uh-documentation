@@ -77,7 +77,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: person_no
   type: numeric(2,0)
   description: ''
@@ -242,7 +245,10 @@ columns:
   description: ''
 - name: task_ref
   type: int(4)
-  description: ''
+  description: Task Reference
+  references:
+   - rmtask
+   - task_ref
 - name: tstamp
   type: timestamp
   description: ''

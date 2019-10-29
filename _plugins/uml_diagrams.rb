@@ -48,7 +48,7 @@ class UmlDiagram
   end
 
   def self.table_uml(table, options)
-    description = table['description'] ? "\\n(#{table['description']}" : ''
+    description = table['description'] != '' ? "\\n(#{table['description']})" : ''
     <<~EOF
       Table(#{table['name'].gsub(' ', '')}, "#{table['name']}#{description}") {
       #{columns_uml(table, options)}

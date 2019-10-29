@@ -82,6 +82,7 @@ ActiveRecord::Base.connection.tables.each do |table|
         col['description'] = doc_cols[col['name']]['description'] if doc_cols[col['name']]['description']
         col['notes'] = doc_cols[col['name']]['notes'] if doc_cols[col['name']]['references']
         col['references'] = doc_cols[col['name']]['references'] if doc_cols[col['name']]['references']
+        col['pk'] = doc_cols[col['name']]['pk'] if doc_cols[col['name']]['pk']
       end
     end
   end

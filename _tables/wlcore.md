@@ -279,7 +279,10 @@ columns:
   description: ''
 - name: house_ref
   type: char(10)
-  description: ''
+  description: Household ID
+  references:
+   - househ
+   - house_ref
 - name: house_savings
   type: numeric(10,2)
   description: ''

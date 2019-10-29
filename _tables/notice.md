@@ -91,7 +91,10 @@ columns:
   description: ''
 - name: tenagree_sid
   type: int(4)
-  description: ''
+  description: Tenancy Agreement ID
+  references:
+   - tenagree
+   - tenagree_sid
 - name: tstamp
   type: timestamp
   description: ''

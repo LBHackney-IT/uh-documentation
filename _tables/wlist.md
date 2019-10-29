@@ -1,10 +1,11 @@
 ---
 name: wlist
 layout: table
-description: ''
+description: The definition of the bands in the Housing Register
 type: active
 app_area: housing_register
 primary_key: 
+pseudo_pk: wl_ref
 indexes:
 - name: wlist01
   unique: true
@@ -125,7 +126,7 @@ columns:
   description: ''
 - name: wl_ref
   type: char(3)
-  description: ''
+  description: Waiting List Reference
 - name: wl_ref_penalty
   type: smallint(2)
   description: ''
