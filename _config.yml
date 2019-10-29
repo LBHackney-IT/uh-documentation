@@ -21,6 +21,7 @@ exclude:
   - bin
   - "*.uml"
   - README.md
+  - secrets.env.txt
 
 emptyarray: []
 
