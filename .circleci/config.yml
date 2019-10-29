@@ -30,7 +30,7 @@ commands:
 
       - run:
           name: install dependencies
-          command: bundle install --jobs=4 --retry=3 --path vendor/bundle
+          command: bundle install --jobs=4 --retry=3 --path vendor/bundle --without development
 
       - save_cache:
           paths:
