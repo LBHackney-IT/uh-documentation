@@ -1,3 +1,5 @@
 #!/bin/bash
 
+sed -i 's/uml/#uml/g' .gitignore
 bundle exec jgd
+sed -i 's/#uml/uml/g' .gitignore
