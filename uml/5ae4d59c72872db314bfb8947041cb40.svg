@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="265px" preserveAspectRatio="none" style="width:633px;height:265px;" version="1.1" viewBox="0 0 633 265" width="633px" zoomAndPan="magnify"><defs><filter height="300%" id="ffkuabgmnkpnn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class vmaction--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="78.4141" id="vmaction" style="stroke: #A80036; stroke-width: 1.5;" width="144" x="9" y="14.5"/><ellipse cx="49.2" cy="30.5" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M50.0438,37.25 L47.5906,37.25 L47.5906,27 L44.45,27 L44.45,24.8594 L53.1844,24.8594 L53.1844,27 L50.0438,27 L50.0438,37.25 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="68.8" y="34.6543">vmaction</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="10" x2="152" y1="46.5" y2="46.5"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="88" x="15" y="60.7104">vm_action_ref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="107" y="60.7104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="107" y="60.7104">char[5]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="19" y="73.5151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="15" y="86.3198">+ 11 columns</text><!--class vmevent--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="78.4141" id="vmevent" style="stroke: #A80036; stroke-width: 1.5;" width="137" x="188.5" y="14.5"/><ellipse cx="227.35" cy="30.5" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M228.1938,37.25 L225.7406,37.25 L225.7406,27 L222.6,27 L222.6,24.8594 L231.3344,24.8594 L231.3344,27 L228.1938,27 L228.1938,37.25 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="52" x="246.65" y="34.6543">vmevent</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="189.5" x2="324.5" y1="46.5" y2="46.5"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81" x="194.5" y="60.7104">ve_event_ref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="279.5" y="60.7104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="279.5" y="60.7104">char[3]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="198.5" y="73.5151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="194.5" y="86.3198">+ 10 columns</text><!--class vmeventh--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="52.8047" id="vmeventh" style="stroke: #A80036; stroke-width: 1.5;" width="92" x="361" y="27"/><ellipse cx="376" cy="43" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M376.8438,49.75 L374.3906,49.75 L374.3906,39.5 L371.25,39.5 L371.25,37.3594 L379.9844,37.3594 L379.9844,39.5 L376.8438,39.5 L376.8438,49.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="390" y="47.1543">vmeventh</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="362" x2="452" y1="59" y2="59"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="367" y="73.2104">+ 18 columns</text><!--class vmoccmat--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="78.4141" id="vmoccmat" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="6" y="176"/><ellipse cx="45.75" cy="192" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M46.5938,198.75 L44.1406,198.75 L44.1406,188.5 L41,188.5 L41,186.3594 L49.7344,186.3594 L49.7344,188.5 L46.5938,188.5 L46.5938,198.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="65.25" y="196.1543">vmoccmat</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="155" y1="208" y2="208"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="94" x="12" y="222.2104">vm_occmat_ref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="110" y="222.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="110" y="222.2104">char[6]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="16" y="235.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="12" y="247.8198">+ 8 columns</text><!--class vmrecord--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="91.2188" id="vmrecord" style="stroke: #A80036; stroke-width: 1.5;" width="134" x="488" y="8"/><ellipse cx="522.8" cy="24" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M523.6438,30.75 L521.1906,30.75 L521.1906,20.5 L518.05,20.5 L518.05,18.3594 L526.7844,18.3594 L526.7844,20.5 L523.6438,20.5 L523.6438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="58" x="541.2" y="28.1543">vmrecord</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="489" x2="621" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="71" x="494" y="54.2104">vm_propref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="569" y="54.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="47" x="569" y="54.2104">char[16]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="48" x="494" y="67.0151">prop_ref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="546" y="67.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="47" x="546" y="67.0151">char[12]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="498" y="79.8198"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="494" y="92.6245">+ 48 columns</text><!--class vmstats--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="52.8047" id="vmstats" style="stroke: #A80036; stroke-width: 1.5;" width="83" x="191.5" y="188.5"/><ellipse cx="207.4" cy="204.5" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M208.2438,211.25 L205.7906,211.25 L205.7906,201 L202.65,201 L202.65,198.8594 L211.3844,198.8594 L211.3844,201 L208.2438,201 L208.2438,211.25 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="221.6" y="208.6543">vmstats</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="192.5" x2="273.5" y1="220.5" y2="220.5"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="197.5" y="234.7104">+ 9 columns</text><!--class vmtvloss--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="78.4141" id="vmtvloss" style="stroke: #A80036; stroke-width: 1.5;" width="135" x="309.5" y="176"/><ellipse cx="347" cy="192" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M347.8438,198.75 L345.3906,198.75 L345.3906,188.5 L342.25,188.5 L342.25,186.3594 L350.9844,186.3594 L350.9844,188.5 L347.8438,188.5 L347.8438,198.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="53" x="366" y="196.1543">vmtvloss</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="310.5" x2="443.5" y1="208" y2="208"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="79" x="315.5" y="222.2104">vm_vlcat_ref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="398.5" y="222.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="398.5" y="222.2104">char[3]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="319.5" y="235.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="315.5" y="247.8198">+ 9 columns</text><!--class property--><rect fill="#FEFECE" filter="url(#ffkuabgmnkpnn)" height="40" id="property" style="stroke: #A80036; stroke-width: 1.5;" width="85" x="512.5" y="195"/><ellipse cx="527.5" cy="211" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M530.4688,216.6406 Q529.8906,216.9375 529.25,217.0859 Q528.6094,217.2344 527.9063,217.2344 Q525.4063,217.2344 524.0859,215.5859 Q522.7656,213.9375 522.7656,210.8125 Q522.7656,207.6875 524.0859,206.0313 Q525.4063,204.375 527.9063,204.375 Q528.6094,204.375 529.2578,204.5313 Q529.9063,204.6875 530.4688,204.9844 L530.4688,207.7031 Q529.8438,207.125 529.25,206.8516 Q528.6563,206.5781 528.0313,206.5781 Q526.6875,206.5781 526,207.6484 Q525.3125,208.7188 525.3125,210.8125 Q525.3125,212.9063 526,213.9766 Q526.6875,215.0469 528.0313,215.0469 Q528.6563,215.0469 529.25,214.7734 Q529.8438,214.5 530.4688,213.9219 L530.4688,216.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="53" x="541.5" y="215.1543">property</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="513.5" x2="596.5" y1="227" y2="227"/><!--link vmrecord to property--><path d="M555,99.354 C555,128.651 555,165.7732 555,189.7038 " fill="none" id="vmrecord-property" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="555,194.898,559,185.898,555,189.898,551,185.898,555,194.898" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="53" x="556" y="142.0669">prop_ref</text><!--link vmaction to vmevent--><!--link vmevent to vmeventh--><!--link vmaction to vmoccmat--><!--link vmoccmat to vmstats--><!--link vmstats to vmtvloss--><!--
+@startuml
+hide methods
+hide stereotypes
+
+class vmaction as "vmaction" << (T,#FFAAAA) >> {
+<b>vm_action_ref</b> <i>char[5]</i>
+
+<i>+ 11 columns</i>
+}
+
+
+class vmevent as "vmevent" << (T,#FFAAAA) >> {
+<b>ve_event_ref</b> <i>char[3]</i>
+
+<i>+ 10 columns</i>
+}
+
+
+class vmeventh as "vmeventh" << (T,#FFAAAA) >> {
+
+<i>+ 18 columns</i>
+}
+
+
+class vmoccmat as "vmoccmat" << (T,#FFAAAA) >> {
+<b>vm_occmat_ref</b> <i>char[6]</i>
+
+<i>+ 8 columns</i>
+}
+
+
+class vmrecord as "vmrecord" << (T,#FFAAAA) >> {
+<b>vm_propref</b> <i>char[16]</i>
+<u>prop_ref</u> <i>char[12]</i>
+
+<i>+ 48 columns</i>
+}
+
+
+class vmstats as "vmstats" << (T,#FFAAAA) >> {
+
+<i>+ 9 columns</i>
+}
+
+
+class vmtvloss as "vmtvloss" << (T,#FFAAAA) >> {
+<b>vm_vlcat_ref</b> <i>char[3]</i>
+
+<i>+ 9 columns</i>
+}
+
+
+
+
+
+
+vmrecord - -> property : "prop_ref"
+
+
+@enduml
+
+PlantUML version 1.2019.08(Sat Jul 13 19:25:14 UTC 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_131-8u131-b11-1~bpo8+1-b11
+Operating System: Linux
+OS Version: 4.15.0-1043-aws
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

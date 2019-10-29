@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="386px" preserveAspectRatio="none" style="width:763px;height:386px;" version="1.1" viewBox="0 0 763 386" width="763px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fgs57ef1ghck" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class hadiary--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiary" style="stroke: #A80036; stroke-width: 1.5;" width="120" x="20.5" y="8"/><ellipse cx="54.4" cy="24" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M55.2438,30.75 L52.7906,30.75 L52.7906,20.5 L49.65,20.5 L49.65,18.3594 L58.3844,18.3594 L58.3844,20.5 L55.2438,20.5 L55.2438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="46" x="72.6" y="28.1543">hadiary</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="21.5" x2="139.5" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="44" x="26.5" y="54.2104">tstamp</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="74.5" y="54.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="74.5" y="54.2104">timestamp</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="30.5" y="67.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="26.5" y="79.8198">+ 14 columns</text><!--class hadiaryalloc--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiaryalloc" style="stroke: #A80036; stroke-width: 1.5;" width="149" x="175" y="8"/><ellipse cx="208.9" cy="24" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M209.7438,30.75 L207.2906,30.75 L207.2906,20.5 L204.15,20.5 L204.15,18.3594 L212.8844,18.3594 L212.8844,20.5 L209.7438,20.5 L209.7438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="75" x="227.1" y="28.1543">hadiaryalloc</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="176" x2="323" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="104" x="181" y="54.2104">hadiaryalloc_sid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="289" y="54.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="289" y="54.2104">int[4]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="185" y="67.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="181" y="79.8198">+ 10 columns</text><!--class hadiaryalloccond--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiaryalloccond" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="359.5" y="8"/><ellipse cx="393.4" cy="24" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M394.2438,30.75 L391.7906,30.75 L391.7906,20.5 L388.65,20.5 L388.65,18.3594 L397.3844,18.3594 L397.3844,20.5 L394.2438,20.5 L394.2438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="106" x="411.6" y="28.1543">hadiaryalloccond</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="360.5" x2="538.5" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="135" x="365.5" y="54.2104">hadiaryalloccond_sid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="504.5" y="54.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="504.5" y="54.2104">int[4]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="369.5" y="67.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="365.5" y="79.8198">+ 7 columns</text><!--class hadiaryallocexpr--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiaryallocexpr" style="stroke: #A80036; stroke-width: 1.5;" width="177" x="575" y="8"/><ellipse cx="609.35" cy="24" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M610.1938,30.75 L607.7406,30.75 L607.7406,20.5 L604.6,20.5 L604.6,18.3594 L613.3344,18.3594 L613.3344,20.5 L610.1938,20.5 L610.1938,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="627.65" y="28.1543">hadiaryallocexpr</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="576" x2="751" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="581" y="54.2104">hadiaryallocexpr_sid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="717" y="54.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="717" y="54.2104">int[4]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="585" y="67.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="581" y="79.8198">+ 9 columns</text><!--class hadiarybook--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiarybook" style="stroke: #A80036; stroke-width: 1.5;" width="149" x="6" y="146"/><ellipse cx="39" cy="162" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M39.8438,168.75 L37.3906,168.75 L37.3906,158.5 L34.25,158.5 L34.25,156.3594 L42.9844,156.3594 L42.9844,158.5 L39.8438,158.5 L39.8438,168.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="57" y="166.1543">hadiarybook</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="154" y1="178" y2="178"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="104" x="12" y="192.2104">hadiarybook_sid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="120" y="192.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="120" y="192.2104">int[4]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="16" y="205.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="12" y="217.8198">+ 21 columns</text><!--class hadiarybookcond--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiarybookcond" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="190.5" y="146"/><ellipse cx="223.5" cy="162" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M224.3438,168.75 L221.8906,168.75 L221.8906,158.5 L218.75,158.5 L218.75,156.3594 L227.4844,156.3594 L227.4844,158.5 L224.3438,158.5 L224.3438,168.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="241.5" y="166.1543">hadiarybookcond</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="191.5" x2="369.5" y1="178" y2="178"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="135" x="196.5" y="192.2104">hadiarybookcond_sid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="335.5" y="192.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="335.5" y="192.2104">int[4]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="200.5" y="205.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="196.5" y="217.8198">+ 18 columns</text><!--class hadiarybookexpr--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="78.4141" id="hadiarybookexpr" style="stroke: #A80036; stroke-width: 1.5;" width="177" x="406" y="146"/><ellipse cx="439.45" cy="162" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M440.2938,168.75 L437.8406,168.75 L437.8406,158.5 L434.7,158.5 L434.7,156.3594 L443.4344,156.3594 L443.4344,158.5 L440.2938,158.5 L440.2938,168.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="104" x="457.55" y="166.1543">hadiarybookexpr</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="407" x2="582" y1="178" y2="178"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="132" x="412" y="192.2104">hadiarybookexpr_sid</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="548" y="192.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="548" y="192.2104">int[4]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="416" y="205.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="412" y="217.8198">+ 9 columns</text><!--class hadiaryprofdets--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="52.8047" id="hadiaryprofdets" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="618" y="158.5"/><ellipse cx="633" cy="174.5" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M633.8438,181.25 L631.3906,181.25 L631.3906,171 L628.25,171 L628.25,168.8594 L636.9844,168.8594 L636.9844,171 L633.8438,171 L633.8438,181.25 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="647" y="178.6543">hadiaryprofdets</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="619" x2="748" y1="190.5" y2="190.5"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="624" y="204.7104">+ 16 columns</text><!--class hadiaryprofile--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="52.8047" id="hadiaryprofile" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="22" y="303"/><ellipse cx="37" cy="319" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M37.8438,325.75 L35.3906,325.75 L35.3906,315.5 L32.25,315.5 L32.25,313.3594 L40.9844,313.3594 L40.9844,315.5 L37.8438,315.5 L37.8438,325.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="51" y="323.1543">hadiaryprofile</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="23" x2="138" y1="335" y2="335"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="28" y="349.2104">+ 15 columns</text><!--class supplier--><rect fill="#FEFECE" filter="url(#f1fgs57ef1ghck)" height="91.2188" id="supplier" style="stroke: #A80036; stroke-width: 1.5;" width="120" x="174.5" y="284"/><ellipse cx="206.6" cy="300" fill="#FFAAAA" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M207.4438,306.75 L204.9906,306.75 L204.9906,296.5 L201.85,296.5 L201.85,294.3594 L210.5844,294.3594 L210.5844,296.5 L207.4438,296.5 L207.4438,306.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="224.4" y="304.1543">supplier</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="175.5" x2="293.5" y1="316" y2="316"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="47" x="180.5" y="330.2104">sup_ref</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="231.5" y="330.2104"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="47" x="231.5" y="330.2104">char[12]</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="44" x="180.5" y="343.0151">tstamp</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="228.5" y="343.0151"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="228.5" y="343.0151">timestamp</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="184.5" y="355.8198"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="78" x="180.5" y="368.6245">+ 71 columns</text><!--link hadiary to hadiaryalloc--><!--link hadiaryalloc to hadiaryalloccond--><!--link hadiaryalloccond to hadiaryallocexpr--><!--link hadiary to hadiarybook--><!--link hadiarybook to hadiarybookcond--><!--link hadiarybookcond to hadiarybookexpr--><!--link hadiarybookexpr to hadiaryprofdets--><!--link hadiarybook to hadiaryprofile--><!--link hadiaryprofile to supplier--><!--
+@startuml
+hide methods
+hide stereotypes
+
+class hadiary as "hadiary" << (T,#FFAAAA) >> {
+<b>tstamp</b> <i>timestamp</i>
+
+<i>+ 14 columns</i>
+}
+
+
+class hadiaryalloc as "hadiaryalloc" << (T,#FFAAAA) >> {
+<b>hadiaryalloc_sid</b> <i>int[4]</i>
+
+<i>+ 10 columns</i>
+}
+
+
+class hadiaryalloccond as "hadiaryalloccond" << (T,#FFAAAA) >> {
+<b>hadiaryalloccond_sid</b> <i>int[4]</i>
+
+<i>+ 7 columns</i>
+}
+
+
+class hadiaryallocexpr as "hadiaryallocexpr" << (T,#FFAAAA) >> {
+<b>hadiaryallocexpr_sid</b> <i>int[4]</i>
+
+<i>+ 9 columns</i>
+}
+
+
+class hadiarybook as "hadiarybook" << (T,#FFAAAA) >> {
+<b>hadiarybook_sid</b> <i>int[4]</i>
+
+<i>+ 21 columns</i>
+}
+
+
+class hadiarybookcond as "hadiarybookcond" << (T,#FFAAAA) >> {
+<b>hadiarybookcond_sid</b> <i>int[4]</i>
+
+<i>+ 18 columns</i>
+}
+
+
+class hadiarybookexpr as "hadiarybookexpr" << (T,#FFAAAA) >> {
+<b>hadiarybookexpr_sid</b> <i>int[4]</i>
+
+<i>+ 9 columns</i>
+}
+
+
+class hadiaryprofdets as "hadiaryprofdets" << (T,#FFAAAA) >> {
+
+<i>+ 16 columns</i>
+}
+
+
+class hadiaryprofile as "hadiaryprofile" << (T,#FFAAAA) >> {
+
+<i>+ 15 columns</i>
+}
+
+
+class supplier as "supplier" << (T,#FFAAAA) >> {
+<b>sup_ref</b> <i>char[12]</i>
+<b>tstamp</b> <i>timestamp</i>
+
+<i>+ 71 columns</i>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2019.08(Sat Jul 13 19:25:14 UTC 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_131-8u131-b11-1~bpo8+1-b11
+Operating System: Linux
+OS Version: 4.15.0-1043-aws
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
